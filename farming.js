@@ -717,7 +717,7 @@
         MESSAGETYPE_NOTE: 'note',
         messages: null,
         spinner: null,
-        splash: valid,
+        splash: null,
         stickyPanel: true,
         panelInTransit: false,
         panelOut: true,
