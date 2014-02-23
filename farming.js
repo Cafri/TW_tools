@@ -890,7 +890,7 @@
                 this.splash = $(TWBot.htmlsnippets.splash).appendTo('body');
                 $('#closer').click(function () {
                     $('#splashscreen').show();
-                    $(this).show()
+                    $(this).hide()
                 })
             }
             this.splash.show();
