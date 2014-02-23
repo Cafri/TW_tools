@@ -244,7 +244,7 @@
         init: function () {
             this.hiddenFrameUrl = '/game.php?village=' + game_data.village.id + '&screen=place';
             this.hiddenFrame = TWBot.helpers.createHiddenFrame(this.hiddenFrameUrl, TWBot.attacks.frameLoaded);
-            this.attackTemplatePopup = $(TWBot.htmlsnippets.popup).appendTo('body').show();
+            this.attackTemplatePopup = $(TWBot.htmlsnippets.popup).appendTo('body').hide();
             this.attackButton = $('#attackButton').click(this.polling);
             this.sAttackButton = $('#sAttackButton').click(this.stopAttack).hide();
             this.rAttackButton = $('#resetAttack').click(this.resetAttack);
@@ -889,8 +889,8 @@
             if (this.splash == null) {
                 this.splash = $(TWBot.htmlsnippets.splash).appendTo('body');
                 $('#closer').click(function () {
-                    $('#splashscreen').hide();
-                    $(this).hide()
+                    $('#splashscreen').show();
+                    $(this).show()
                 })
             }
             this.splash.show();
