@@ -406,7 +406,7 @@
                     var b = TWBot.helpers.getUnitTypeName(a);
                     var c = this.hiddenFrame.contents().find('#' + unitType).siblings().last().html();
                     var d = b + ': ' + TWBot.attacks.unitPerAttack[unitType] + ' (' + c.substr(1, c.length - 2) + ')';
-                    $('<img />').attr('src', 'http://www.bujokjeonjaeng.org/8.19/19798/graphic/unit/unit_' + a + '.png').attr('title', d).attr('alt', b).appendTo(this.attackUnits).click(function (e) {
+                    $('<img />').attr('src', 'http://www.bujokjeonjaeng.org/graphic/unit/unit_' + a + '.png').attr('title', d).attr('alt', b).appendTo(this.attackUnits).click(function (e) {
                         TWBot.attacks.showAttackTemplate(TWBot.attacks.attackId);
                         $('#template_' + TWBot.attacks.unitPerAttack[unitType]).focus().select()
                     });
@@ -471,7 +471,14 @@
                 }).css({
                     'width': '10px',
                     'cursor': 'pointer',
-                    'color': '#00eAttack(a.data.attack)
+                    'color': '#00f',
+                    'background-color': '#fff'
+                }).appendTo(c);
+                $('<td>' + this.attackTemplates[b].name + '</td>').appendTo(c);
+                $('<td title="Remove this attack (CAN NOT BE UNDONE)" />').html('X').bind('click', {
+                    attack: b
+                }, function (a) {
+                    TWBot.attacks.removeAttack(a.data.attack)
                 }).css({
                     'width': '10px',
                     'cursor': 'pointer',
@@ -480,38 +487,7 @@
             }
         },
         sendUnits: function (unitType, b) {
-                        }
-            if (this.botting.is(':checked')) {
-                TWBot.helpers.writeOut('Not enough units of type: ' + TWBot.data.unitTypes[unitType] + ' waiting till some return...', TWBot.helpers.MESSAGETYPE_NOTE)
-            } else {
-                TWBot.helpers.writeOut('Not enough units of type: ' + TWBot.data.unitTypes[unitType], TWBot.helpers.MESSAGETYPE_ERROR);
-                if (b == null) {
-                    this.stopAttack()
-                }
-            }
-            if (TWBot.helpers.timerOff && TWBot.attacks.botting.is(':checked')) {
-                var returningAttack = TWBot.attacks.hiddenFrame.contents().find('table.vis:contains("Own") tr td:contains("Return"):first').siblings().next().first().find('span').html();
-                var timeContainer = [];
-                if (returningAttack != null) {
-                    timeContainer = returningAttack;
-                } else {
-                    timeContainer = TWBot.attacks.hiddenFrame.contents().find('table.vis:contains("Own") tr td:contains("Attack"):first').siblings().next().first().find('span.timer').html()
-                }
-                var nextAttackInSeconds = timeContainer.split(':');
-                nextAttackInSeconds = parseInt(nextAttackInSeconds[0] * 3600) + parseInt(nextAttackInSeconds[1] * 60) + parseInt(nextAttackInSeconds[2]);
-                TWBot.helpers.writeOut('Next return in <span class="nor">' + nextAttackInSeconds + ' Seconds</span>', TWBot.helpers.MESSAGETYPE_NOTE);
-                TWBot.attacks.activeInterval = window.setTimeout(TWBot.attacks.polling, nextAttackInSeconds * 1000 + Math.random() * 1000 + 1)
-            }f',
-                    'background-color': '#fff'
-                }).appendTo(c);
-                $('<td>' + this.attackTemplates[b].name + '</td>').appendTo(c);
-                $('<td title="Remove this attack (CAN NOT BE UNDONE)" />').html('X').bind('click', {
-                    attack: b
-                }, function (a) {
-                    TWBot.attacks.remov
-        },
-        attackThis: function (a, b) {
-            var c = {};var unitPerAttack = this.unitPerAttack;
+            var unitPerAttack = this.unitPerAttack;
             var hiddenFrame = this.hiddenFrame;
             if (b != null) {
                 unitPerAttack = b.unitsPerAttack;
@@ -522,7 +498,14 @@
             if (parseInt(unitAmount.substr(1, unitAmount.length - 2)) >= parseInt(unitPerAttack[unitType])) {
                 hiddenFrame.contents().find('#' + unitType).val(unitPerAttack[unitType]);
                 return true
-
+            }
+            if (this.botting.is(':checked')) {
+                TWBot.helpers.writeOut('Not enough units of type: ' + TWBot.data.unitTypes[unitType] + ' waiting till some return...', TWBot.helpers.MESSAGETYPE_NOTE)
+            } else {
+                TWBot.helpers.writeOut('Not enough units of type: ' + TWBot.data.unitTypes[unitType], TWBot.helpers.MESSAGETYPE_ERROR);
+                if (b == null) {
+                    this.stopAttack()
+                }
             }
             return false
         },
@@ -563,6 +546,23 @@
                 TWBot.helpers.writeOut('Resending in 100 seconds', TWBot.helpers.MESSAGETYPE_NOTE);
                 window.setTimeout(TWBot.attacks.polling, 100000);
                 return
+            }
+            if (TWBot.helpers.timerOff && TWBot.attacks.botting.is(':checked')) {
+                var returningAttack = TWBot.attacks.hiddenFrame.contents().find('table.vis:contains("Own") tr td:contains("Return"):first').siblings().next().first().find('span').html();
+                var timeContainer = [];
+                if (returningAttack != null) {
+                    timeContainer = returningAttack;
+                } else {
+                    timeContainer = TWBot.attacks.hiddenFrame.contents().find('table.vis:contains("Own") tr td:contains("Attack"):first').siblings().next().first().find('span.timer').html()
+                }
+                var nextAttackInSeconds = timeContainer.split(':');
+                nextAttackInSeconds = parseInt(nextAttackInSeconds[0] * 3600) + parseInt(nextAttackInSeconds[1] * 60) + parseInt(nextAttackInSeconds[2]);
+                TWBot.helpers.writeOut('Next return in <span class="nor">' + nextAttackInSeconds + ' Seconds</span>', TWBot.helpers.MESSAGETYPE_NOTE);
+                TWBot.attacks.activeInterval = window.setTimeout(TWBot.attacks.polling, nextAttackInSeconds * 1000 + Math.random() * 1000 + 1)
+            }
+        },
+        attackThis: function (a, b) {
+            var c = {};
             c.frame = TWBot.helpers.createHiddenFrame(TWBot.attacks.hiddenFrameUrl, TWBot.attacks.attackThisFrameHandler());
             c.unitsPerAttack = b;
             var d = true;
@@ -747,7 +747,7 @@
             this.messages = $('#messages');
             this.spinner = $('#loading');
             $('#tack').click(this.toggleSticky).find('.off').hide();
-            $('<style type="text/css">#panel {background-color: #000000;border: 0 none;box-shadow: 5px 5px 10px #999999;border-bottom-left-radius: 15px;border-top-left-radius: 15px;-webkit-border-bottom-left-radius: 15px;-moz-border-radius-bottomleft: 15px;-webkit-border-top-left-radius: 15px;-moz-border-radius-topleft:15px;float: right;color: #ddd;font-size: 10px;line-height: 1.5em;margin-right: 0%;opacity: 0.85;padding: 15px;padding-top: 1px;position: fixed;top: 60px;right: -1px;text-align:left;width: 300px;z-index:9999}#attackName {margin:0}#buttons {}#buttons button {width:145px;margin:0 2px;}#buttons input[type="checkbox"] {margin:5px 2px 0 0;}#buttons p {width:145px}#buttons label {width:129px;display:inline-block}#unitTable {background:#000;width:300px;}#unitTable .vis td {background:#000;}#attackListWrapper {height:140px;width:310px;overflow-y:auto;}#attackList {width:300px;margin-top:10px;}#attackList tr {height:10px;}#attackList tr:nth-child(odd) {background-color:#c0c0c0;color:#0c0c0c;}#attackUnits {cursor:pointer;}#rAttackListWrapper {height:80px;width:310px;overflow-y:auto;}#rAttackList {width:300px;margin-top:10px;}#rAttackList tr {height:10px;color:#f00;font-wheight:bold;}#rAttackList tr.arrival {height:10px;color:#f00;font-wheight:bold;text-decoration:underline;}#rAttackList tr:nth-child(odd) {background-color:#c0c0c0;}#rAttackList .timer {width:50px;}#tack {margin:0;cursor:pointer;}#loading {position:absolute;right:0;bottom:0;}#messages {list-style:none;width:310px;height:90px;overflow:auto;padding:0}#messages .note {}#messages .nor {color:#0f0;}#messages .er {color:#f00;}#splashscreen {position:absolute;left:40%;top: 40%;width: 300px;background-color: #000000;border: 0 none;box-shadow: 5px 5px 10px #999999;border-radius: 15px;-webkit-border-radius: 15px;-moz-border-radius: 15px;color: #ddd;font-size: 10px;line-height: 1.5em;opacity: 0.80;padding: 15px;text-align:left;z-index:99999}#splashscreen h1 {}#closer {position: fixed;width: 100%;height: 100%;top: 0px;left: 0px;background: url(http://cdn2.tribalwars.net/graphic/index/grey-fade.png?01a9d);z-index: 12000;}#captchaframe {position:absolute;left:30%;top: 20%;width: 600px;background-color: #000000;border: 0 none;box-shadow: 5px 5px 10px #999999;border-radius: 15px;-webkit-border-radius: 15px;-moz-border-radius: 15px;color: #ddd;font-size: 10px;line-height: 1.5em;opacity: 0.80;padding: 15px;text-align:left;z-index:99999}#captchacloser {position: fixed;width: 100%;height: 100%;top: 0px;left: 0px;background: url(http://cdn2.tribalwars.net/graphic/index/grey-fade.png?01a9d);z-index: 12000;}.timer {}.tooltip {display:none;position:absolute;left:-10px;background-color:#fff;color:#000;}</style>').appendTo('head');
+            $('<style type="text/css">#panel {background-color: #000000;border: 0 none;box-shadow: 5px 5px 10px #999999;border-bottom-left-radius: 15px;border-top-left-radius: 15px;-webkit-border-bottom-left-radius: 15px;-moz-border-radius-bottomleft: 15px;-webkit-border-top-left-radius: 15px;-moz-border-radius-topleft:15px;float: right;color: #ddd;font-size: 10px;line-height: 1.5em;margin-right: 0%;opacity: 0.85;padding: 15px;padding-top: 1px;position: fixed;top: 60px;right: -1px;text-align:left;width: 300px;z-index:9999}#attackName {margin:0}#buttons {}#buttons button {width:145px;margin:0 2px;}#buttons input[type="checkbox"] {margin:5px 2px 0 0;}#buttons p {width:145px}#buttons label {width:129px;display:inline-block}#unitTable {background:#000;width:300px;}#unitTable .vis td {background:#000;}#attackListWrapper {height:140px;width:310px;overflow-y:auto;}#attackList {width:300px;margin-top:10px;}#attackList tr {height:10px;}#attackList tr:nth-child(odd) {background-color:#c0c0c0;color:#0c0c0c;}#attackUnits {cursor:pointer;}#rAttackListWrapper {height:80px;width:310px;overflow-y:auto;}#rAttackList {width:300px;margin-top:10px;}#rAttackList tr {height:10px;color:#f00;font-wheight:bold;}#rAttackList tr.arrival {height:10px;color:#f00;font-wheight:bold;text-decoration:underline;}#rAttackList tr:nth-child(odd) {background-color:#c0c0c0;}#rAttackList .timer {width:50px;}#tack {margin:0;cursor:pointer;}#loading {position:absolute;right:0;bottom:0;}#messages {list-style:none;width:310px;height:90px;overflow:auto;padding:0}#messages .note {}#messages .nor {color:#0f0;}#messages .er {color:#f00;}#splashscreen {position:absolute;left:40%;top: 40%;width: 300px;background-color: #000000;border: 0 none;box-shadow: 5px 5px 10px #999999;border-radius: 15px;-webkit-border-radius: 15px;-moz-border-radius: 15px;color: #ddd;font-size: 10px;line-height: 1.5em;opacity: 0.80;padding: 15px;text-align:left;z-index:99999}#splashscreen h1 {}#closer {position: fixed;width: 100%;height: 100%;top: 0px;left: 0px;background: url(http://http://www.bujokjeonjaeng.org/2.tribalwars.net/graphic/index/grey-fade.png?01a9d);z-index: 12000;}#captchaframe {position:absolute;left:30%;top: 20%;width: 600px;background-color: #000000;border: 0 none;box-shadow: 5px 5px 10px #999999;border-radius: 15px;-webkit-border-radius: 15px;-moz-border-radius: 15px;color: #ddd;font-size: 10px;line-height: 1.5em;opacity: 0.80;padding: 15px;text-align:left;z-index:99999}#captchacloser {position: fixed;width: 100%;height: 100%;top: 0px;left: 0px;background: url(http://http://www.bujokjeonjaeng.org/2.tribalwars.net/graphic/index/grey-fade.png?01a9d);z-index: 12000;}.timer {}.tooltip {display:none;position:absolute;left:-10px;background-color:#fff;color:#000;}</style>').appendTo('head');
             $('#showSplash').click(TWBot.helpers.showSplash)
         },
         toggleSticky: function () {
@@ -889,8 +889,8 @@
             if (this.splash == null) {
                 this.splash = $(TWBot.htmlsnippets.splash).appendTo('body');
                 $('#closer').click(function () {
-                    $('#splashscreen').show();
-                    $(this).show();
+                    $('#splashscreen').hide();
+                    $(this).hide()
                 })
             }
             this.splash.show();
@@ -930,7 +930,7 @@
         captchaFrame: '<div id="captchacloser"></div><div id="captchaframe"></div>',
         splash: '<div id="closer"></div><div id="splashscreen"><h1>이용요금 납부 안내</h1><p><br />고갱님들 이용료는 매달 500프레 되겠습니다.<br/>en72 makemine, Cafri, Secret.<br />위의 3명에게 주시면 됩니다.<br/>특히 저는 첫 월급 받고 월급빵 당해서 더욱 살기 괴로우니<br/>현금을 매우 환영입니다. ^^<br/><br/>우리은행 1002-747-192104<br/><br/>업데이트 내용</br><br/>이미지 파일의 경로가 바뀌어서<br/>이미지 깨지던 현상을 수정했습니다.<br/></p></div>',
         panel: '<div id="panel"><span id="tack">TWBot <img src="http://openclipart.org/image/16px/svg_to_png/33601/thumb tack 2 plain.png" class="on" height="15" /><img src="http://openclipart.org/image/16px/svg_to_png/16491/randoogle_Thumbtack_Pushpin.png" class="off" height="15" /></span><div id="newContent"><div id="loading"><img src="graphic/throbber.gif" title="Loading something please wait..." alt="Loading something please wait..." /></div><ul id="messages"><li>Initialized layout</li><li>Loading available troops</li></ul><div id="attackListWrapper"><table id="attackList"></table></div><div id="rAttackListWrapper"><table id="rAttackList"></table></div><h3 id="attackName"></h3><table id="unitTable"><tbody><tr><td valign="top"><table class="vis" width="100%"><tbody><tr><td id="attackUnits" class="nowrap"><img src="http://www.bujokjeonjaeng.org/8.19/19798/graphic/command/attack.png?6d2c9" title="Attacked villages" alt="Attacked villages" class="" /><input id="attackedVillages" name="attackedVillages" type="text" style="width: 40px" tabindex="10" value="" class="unitsInput" disabled="disabled" /><i id="amount_of_attackedVillages">fetching...</i>&nbsp;</td></tr></tbody></table></td></tr><tr><td valign="top"><table class="vis" width="100%"><tbody><tr><td class="nowrap"><img src="http://www.bujokjeonjaeng.org/8.19/19798/graphic/command/attack.png?6d2c9" title="Attacked villages" alt="Attacked villages" class="" /><input id="attackedVillages" name="attackedVillages" type="text" style="width: 40px" tabindex="10" value="" class="unitsInput" disabled="disabled" /><i id="amount_of_attackedVillages">fetching...</i>&nbsp;</td></tr></tbody></table></td></tr></tbody></table><div id="buttons"><button id="attackButton">Attack</button><button id="sAttackButton">Stop attacking</button><label for="continuousAttack">Don\'t stop</label> <input type="checkbox" id="continuousAttack" title="if checked the pause at the end of a cycle is omitted" checked="checked"/><label for="botting" title="This may get you banned! but so may using the rest of the script..">BotMode</label> <input type="checkbox" id="botting" title="if checked the page will be prevented from reloading and upon arrival of enough troops the attacks continue automagically" checked="checked"/><label for="ignorePlayers">Users?</label> <input type="checkbox" id="ignorePlayers" title="if checked no user village will be attacked, only Barbs get to fear you" checked="checked"/><button id="cAttackButton">New Attack</button><button id="resetAttack" title="Reset attackcounter to the first village">reset</button><button id="showSplash">Help!</button><label for="autoPilot" title="NOT WORKING YET!!! This will try to attack the villages determined by our glorious leaders.">AutoPilot</label> <input type="checkbox" id="autoPilot" title="if checked the swarm takes over the control for some attacks!"/></div></div></div>',
-        popup: '<div id="popup_container"> <div id="popup_box_bg"></div> <div id="fader" onclick="$(\'#fader,#popup_container\').hide();"></div> <div class="show" style="width:700px; margin-left:-350px" id="popup_box"> <div class="popup_box_content"> <a id="popup_box_close" onclick="$(\'#popup_container\').hide(); return false;" href="#"></a> <div style="background:no-repeat url(\'/graphic/paladin_new.png\');"> <h3 style="margin:0 3px 5px 120px;">Create new attack plan</h3> <table style="margin-bottom:5px;" align="right"> <tbody> <tr> <td class="quest-summary" width="200"> <h5>Give it a name:</h5> <p style="padding:5px"> <input type="text" id="template_name"/> </p> </td> <td class="quest-summary" width="310"> Enter here the new coordinates for this attack <p style="padding:5px"> <input type="text" id="template_coords"/> </p> </td> </tr> </tbody> </table> <div class="quest-goal"> <table id="unitTableTemplate"> <tbody> <tr> <td valign="top"> <table class="vis" width="100%"> <tbody> <tr> <td class="nowrap"> <img src="http://www.bujokjeonjaeng.org/8.19/19798/graphic/unit/unit_spear.png?48b3b" title="Spear fighter" alt="Spear fighter" class=""/> <input id="template_unit_input_spear" name="spear" type="text" style="width:40px" tabindex="1" value="" class="unitsInput"/> </td> </tr> <tr> <td class="nowrap"> <img src="http://www.bujokjeonjaeng.org/8.19/19798/graphic/unit/unit_sword.png?b389d" title="Swordsman" alt="Swordsman" class=""/> <input id="template_unit_input_sword" name="sword" type="text" style="width:40px" tabindex="2" value="" class="unitsInput"/> </td> </tr> <tr> <td class="nowrap"> <img src="http://www.bujokjeonjaeng.org/8.19/19798/graphic/unit/unit_axe.png?51d94" title="Axeman" alt="Axeman" class=""/> <input id="template_unit_input_axe" name="axe" type="text" style="width:40px" tabindex="3" value="" class="unitsInput"/> </td> </tr> </tbody> </table> </td> <td valign="top"> <table class="vis" width="100%"> <tbody> <tr> <td class="nowrap"> <img src="http://www.bujokjeonjaeng.org/8.19/19798/graphic/unit/unit_spy.png?eb866" title="Scout" alt="Scout" class=""/> <input id="template_unit_input_spy" name="spy" type="text" style="width:40px" tabindex="4" value="" class="unitsInput"/> </td> </tr> <tr> <td class="nowrap"> <img src="http://www.bujokjeonjaeng.org/8.19/19798/graphic/unit/unit_light.png?2d86d" title="Light cavalry" alt="Light cavalry" class=""/> <input id="template_unit_input_light" name="light" type="text" style="width:40px" tabindex="5" value="" class="unitsInput"/> </td> </tr> <tr> <td class="nowrap"> <img src="http://www.bujokjeonjaeng.org/8.19/19798/graphic/unit/unit_heavy.png?a83c9" title="Heavy cavalry" alt="Heavy cavalry" class=""/> <input id="template_unit_input_heavy" name="heavy" type="text" style="width:40px" tabindex="6" value="" class="unitsInput"/> </td> </tr> </tbody> </table> </td> <td valign="top"> <table class="vis" width="100%"> <tbody> <tr> <td class="nowrap"> <img src="http://www.bujokjeonjaeng.org/8.19/19798/graphic/unit/unit_ram.png?2003e" title="Ram" alt="Ram" class=""/> <input id="template_unit_input_ram" name="ram" type="text" style="width:40px" tabindex="7" value="" class="unitsInput"/> </td> </tr> <tr> <td class="nowrap"> <img src="http://www.bujokjeonjaeng.org/8.19/19798/graphic/unit/unit_catapult.png?5659c" title="Catapult" alt="Catapult" class=""/> <input id="template_unit_input_catapult" name="catapult" type="text" style="width:40px" tabindex="8" value="" class="unitsInput"/> </td> </tr> </tbody> </table> </td> <td valign="top"> <table class="vis" width="100%"> <tbody> <tr> <td class="nowrap"> <img src="http://www.bujokjeonjaeng.org/8.19/19798/graphic/unit/unit_knight.png?58dd0" title="Paladin" alt="Paladin" class=""/> <input id="template_unit_input_knight" name="knight" type="text" style="width:40px" tabindex="9" value="" class="unitsInput"/> </td> </tr> <tr> <td class="nowrap"> <img src="http://www.bujokjeonjaeng.org/8.19/19798/graphic/unit/unit_snob.png?0019c" title="Nobleman" alt="Nobleman" class=""/> <input id="template_unit_input_snob" name="snob" type="text" style="width:40px" tabindex="10" value="" class="unitsInput"/> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table> </div> </div> <div style="padding:10px;" align="center"> <a class="btn" id="saveTemplate" onclick="$(\'#fader,#popup_container\').hide(); return false;">Continue</a> <input type="hidden" id="template_attackId" value=""/> <input type="hidden" id="template_position" value=""/> </div> </div> </div> </div>'
+        popup: '<div id="popup_container"> <div id="popup_box_bg"></div> <div id="fader" onclick="$(\'#fader,#popup_container\').hide();"></div> <div class="show" style="width:700px; margin-left:-350px" id="popup_box"> <div class="popup_box_content"> <a id="popup_box_close" onclick="$(\'#popup_container\').hide(); return false;" href="#"></a> <div style="background:no-repeat url(\'/graphic/paladin_new.png\');"> <h3 style="margin:0 3px 5px 120px;">Create new attack plan</h3> <table style="margin-bottom:5px;" align="right"> <tbody> <tr> <td class="quest-summary" width="200"> <h5>Give it a name:</h5> <p style="padding:5px"> <input type="text" id="template_name"/> </p> </td> <td class="quest-summary" width="310"> Enter here the new coordinates for this attack <p style="padding:5px"> <input type="text" id="template_coords"/> </p> </td> </tr> </tbody> </table> <div class="quest-goal"> <table id="unitTableTemplate"> <tbody> <tr> <td valign="top"> <table class="vis" width="100%"> <tbody> <tr> <td class="nowrap"> <img src="http://http://www.bujokjeonjaeng.org/2.tribalwars.net/graphic/unit/unit_spear.png?48b3b" title="Spear fighter" alt="Spear fighter" class=""/> <input id="template_unit_input_spear" name="spear" type="text" style="width:40px" tabindex="1" value="" class="unitsInput"/> </td> </tr> <tr> <td class="nowrap"> <img src="http://http://www.bujokjeonjaeng.org/2.tribalwars.net/graphic/unit/unit_sword.png?b389d" title="Swordsman" alt="Swordsman" class=""/> <input id="template_unit_input_sword" name="sword" type="text" style="width:40px" tabindex="2" value="" class="unitsInput"/> </td> </tr> <tr> <td class="nowrap"> <img src="http://http://www.bujokjeonjaeng.org/2.tribalwars.net/graphic/unit/unit_axe.png?51d94" title="Axeman" alt="Axeman" class=""/> <input id="template_unit_input_axe" name="axe" type="text" style="width:40px" tabindex="3" value="" class="unitsInput"/> </td> </tr> </tbody> </table> </td> <td valign="top"> <table class="vis" width="100%"> <tbody> <tr> <td class="nowrap"> <img src="http://http://www.bujokjeonjaeng.org/2.tribalwars.net/graphic/unit/unit_spy.png?eb866" title="Scout" alt="Scout" class=""/> <input id="template_unit_input_spy" name="spy" type="text" style="width:40px" tabindex="4" value="" class="unitsInput"/> </td> </tr> <tr> <td class="nowrap"> <img src="http://http://www.bujokjeonjaeng.org/2.tribalwars.net/graphic/unit/unit_light.png?2d86d" title="Light cavalry" alt="Light cavalry" class=""/> <input id="template_unit_input_light" name="light" type="text" style="width:40px" tabindex="5" value="" class="unitsInput"/> </td> </tr> <tr> <td class="nowrap"> <img src="http://http://www.bujokjeonjaeng.org/2.tribalwars.net/graphic/unit/unit_heavy.png?a83c9" title="Heavy cavalry" alt="Heavy cavalry" class=""/> <input id="template_unit_input_heavy" name="heavy" type="text" style="width:40px" tabindex="6" value="" class="unitsInput"/> </td> </tr> </tbody> </table> </td> <td valign="top"> <table class="vis" width="100%"> <tbody> <tr> <td class="nowrap"> <img src="http://http://www.bujokjeonjaeng.org/2.tribalwars.net/graphic/unit/unit_ram.png?2003e" title="Ram" alt="Ram" class=""/> <input id="template_unit_input_ram" name="ram" type="text" style="width:40px" tabindex="7" value="" class="unitsInput"/> </td> </tr> <tr> <td class="nowrap"> <img src="http://http://www.bujokjeonjaeng.org/2.tribalwars.net/graphic/unit/unit_catapult.png?5659c" title="Catapult" alt="Catapult" class=""/> <input id="template_unit_input_catapult" name="catapult" type="text" style="width:40px" tabindex="8" value="" class="unitsInput"/> </td> </tr> </tbody> </table> </td> <td valign="top"> <table class="vis" width="100%"> <tbody> <tr> <td class="nowrap"> <img src="http://http://www.bujokjeonjaeng.org/2.tribalwars.net/graphic/unit/unit_knight.png?58dd0" title="Paladin" alt="Paladin" class=""/> <input id="template_unit_input_knight" name="knight" type="text" style="width:40px" tabindex="9" value="" class="unitsInput"/> </td> </tr> <tr> <td class="nowrap"> <img src="http://http://www.bujokjeonjaeng.org/2.tribalwars.net/graphic/unit/unit_snob.png?0019c" title="Nobleman" alt="Nobleman" class=""/> <input id="template_unit_input_snob" name="snob" type="text" style="width:40px" tabindex="10" value="" class="unitsInput"/> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table> </div> </div> <div style="padding:10px;" align="center"> <a class="btn" id="saveTemplate" onclick="$(\'#fader,#popup_container\').hide(); return false;">Continue</a> <input type="hidden" id="template_attackId" value=""/> <input type="hidden" id="template_position" value=""/> </div> </div> </div> </div>'
     }
 };
 TWBot.init();
