@@ -406,7 +406,7 @@
                     var b = TWBot.helpers.getUnitTypeName(a);
                     var c = this.hiddenFrame.contents().find('#' + unitType).siblings().last().html();
                     var d = b + ': ' + TWBot.attacks.unitPerAttack[unitType] + ' (' + c.substr(1, c.length - 2) + ')';
-                    $('<img />').attr('src', 'http://cdn.tribalwars.net/8.19/19798/graphic/unit_' + a + '.png').attr('title', d).attr('alt', b).appendTo(this.attackUnits).click(function (e) {
+                    $('<img />').attr('src', 'http://www.bujokjeonjaeng.org/8.19/19798/graphic/unit/unit_' + a + '.png').attr('title', d).attr('alt', b).appendTo(this.attackUnits).click(function (e) {
                         TWBot.attacks.showAttackTemplate(TWBot.attacks.attackId);
                         $('#template_' + TWBot.attacks.unitPerAttack[unitType]).focus().select()
                     });
