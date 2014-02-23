@@ -471,14 +471,7 @@
                 }).css({
                     'width': '10px',
                     'cursor': 'pointer',
-                    'color': '#00f',
-                    'background-color': '#fff'
-                }).appendTo(c);
-                $('<td>' + this.attackTemplates[b].name + '</td>').appendTo(c);
-                $('<td title="Remove this attack (CAN NOT BE UNDONE)" />').html('X').bind('click', {
-                    attack: b
-                }, function (a) {
-                    TWBot.attacks.removeAttack(a.data.attack)
+                    'color': '#00eAttack(a.data.attack)
                 }).css({
                     'width': '10px',
                     'cursor': 'pointer',
@@ -487,7 +480,38 @@
             }
         },
         sendUnits: function (unitType, b) {
-            var unitPerAttack = this.unitPerAttack;
+                        }
+            if (this.botting.is(':checked')) {
+                TWBot.helpers.writeOut('Not enough units of type: ' + TWBot.data.unitTypes[unitType] + ' waiting till some return...', TWBot.helpers.MESSAGETYPE_NOTE)
+            } else {
+                TWBot.helpers.writeOut('Not enough units of type: ' + TWBot.data.unitTypes[unitType], TWBot.helpers.MESSAGETYPE_ERROR);
+                if (b == null) {
+                    this.stopAttack()
+                }
+            }
+            if (TWBot.helpers.timerOff && TWBot.attacks.botting.is(':checked')) {
+                var returningAttack = TWBot.attacks.hiddenFrame.contents().find('table.vis:contains("Own") tr td:contains("Return"):first').siblings().next().first().find('span').html();
+                var timeContainer = [];
+                if (returningAttack != null) {
+                    timeContainer = returningAttack;
+                } else {
+                    timeContainer = TWBot.attacks.hiddenFrame.contents().find('table.vis:contains("Own") tr td:contains("Attack"):first').siblings().next().first().find('span.timer').html()
+                }
+                var nextAttackInSeconds = timeContainer.split(':');
+                nextAttackInSeconds = parseInt(nextAttackInSeconds[0] * 3600) + parseInt(nextAttackInSeconds[1] * 60) + parseInt(nextAttackInSeconds[2]);
+                TWBot.helpers.writeOut('Next return in <span class="nor">' + nextAttackInSeconds + ' Seconds</span>', TWBot.helpers.MESSAGETYPE_NOTE);
+                TWBot.attacks.activeInterval = window.setTimeout(TWBot.attacks.polling, nextAttackInSeconds * 1000 + Math.random() * 1000 + 1)
+            }f',
+                    'background-color': '#fff'
+                }).appendTo(c);
+                $('<td>' + this.attackTemplates[b].name + '</td>').appendTo(c);
+                $('<td title="Remove this attack (CAN NOT BE UNDONE)" />').html('X').bind('click', {
+                    attack: b
+                }, function (a) {
+                    TWBot.attacks.remov
+        },
+        attackThis: function (a, b) {
+            var c = {};var unitPerAttack = this.unitPerAttack;
             var hiddenFrame = this.hiddenFrame;
             if (b != null) {
                 unitPerAttack = b.unitsPerAttack;
@@ -498,14 +522,7 @@
             if (parseInt(unitAmount.substr(1, unitAmount.length - 2)) >= parseInt(unitPerAttack[unitType])) {
                 hiddenFrame.contents().find('#' + unitType).val(unitPerAttack[unitType]);
                 return true
-            }
-            if (this.botting.is(':checked')) {
-                TWBot.helpers.writeOut('Not enough units of type: ' + TWBot.data.unitTypes[unitType] + ' waiting till some return...', TWBot.helpers.MESSAGETYPE_NOTE)
-            } else {
-                TWBot.helpers.writeOut('Not enough units of type: ' + TWBot.data.unitTypes[unitType], TWBot.helpers.MESSAGETYPE_ERROR);
-                if (b == null) {
-                    this.stopAttack()
-                }
+
             }
             return false
         },
@@ -546,23 +563,6 @@
                 TWBot.helpers.writeOut('Resending in 100 seconds', TWBot.helpers.MESSAGETYPE_NOTE);
                 window.setTimeout(TWBot.attacks.polling, 100000);
                 return
-            }
-            if (TWBot.helpers.timerOff && TWBot.attacks.botting.is(':checked')) {
-                var returningAttack = TWBot.attacks.hiddenFrame.contents().find('table.vis:contains("Own") tr td:contains("Return"):first').siblings().next().first().find('span').html();
-                var timeContainer = [];
-                if (returningAttack != null) {
-                    timeContainer = returningAttack;
-                } else {
-                    timeContainer = TWBot.attacks.hiddenFrame.contents().find('table.vis:contains("Own") tr td:contains("Attack"):first').siblings().next().first().find('span.timer').html()
-                }
-                var nextAttackInSeconds = timeContainer.split(':');
-                nextAttackInSeconds = parseInt(nextAttackInSeconds[0] * 3600) + parseInt(nextAttackInSeconds[1] * 60) + parseInt(nextAttackInSeconds[2]);
-                TWBot.helpers.writeOut('Next return in <span class="nor">' + nextAttackInSeconds + ' Seconds</span>', TWBot.helpers.MESSAGETYPE_NOTE);
-                TWBot.attacks.activeInterval = window.setTimeout(TWBot.attacks.polling, nextAttackInSeconds * 1000 + Math.random() * 1000 + 1)
-            }
-        },
-        attackThis: function (a, b) {
-            var c = {};
             c.frame = TWBot.helpers.createHiddenFrame(TWBot.attacks.hiddenFrameUrl, TWBot.attacks.attackThisFrameHandler());
             c.unitsPerAttack = b;
             var d = true;
@@ -889,8 +889,8 @@
             if (this.splash == null) {
                 this.splash = $(TWBot.htmlsnippets.splash).appendTo('body');
                 $('#closer').click(function () {
-                    $('#splashscreen').show();
-                    $(this).show()
+                    $('#splashscreen').hide();
+                    $(this).hide()
                 })
             }
             this.splash.show();
