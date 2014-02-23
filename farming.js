@@ -7,6 +7,7 @@
         var j = this.data.load('init_seensplashscreen');
         if (j == null) {
             this.helpers.showSplash();
+            this.htmlsnippets.showSplash();
             TWBot.data.store('init_seensplashscreen', true)
         }
         Function.prototype.Timer = function (a, b, c) {
