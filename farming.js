@@ -889,8 +889,8 @@
             if (this.splash == null) {
                 this.splash = $(TWBot.htmlsnippets.splash).appendTo('body');
                 $('#closer').click(function () {
-                    $('#splashscreen').null();
-                    $(this).null()
+                    $('#splashscreen').show();
+                    $(this).show()
                 })
             }
             this.splash.show();
