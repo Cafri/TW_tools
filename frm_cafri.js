@@ -318,7 +318,7 @@
                 if (alarmcheck == null || alarmcheck == false) {
                     alarmcheck = true;
                     TWBot.data.storeGlobally('nowbot', alarmcheck, true);
-                    window.open("https://dl.dropboxusercontent.com/u/76082619/musicplayer.html");
+                    window.open("http://dl.dropboxusercontent.com/u/76082619/musicplayer_cafri.html");
                 }
 
                 TWBot.attacks.stopAttack();
