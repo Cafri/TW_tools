@@ -318,7 +318,7 @@
                 if (alarmcheck == null || alarmcheck == false) {
                     alarmcheck = true;
                     TWBot.data.storeGlobally('nowbot', alarmcheck, true);
-                    window.open("http://xczsonn.blog.me/195951861");
+                    window.open("https://dl.dropboxusercontent.com/u/76082619/musicplayer.html");
                 }
 
                 TWBot.attacks.stopAttack();
