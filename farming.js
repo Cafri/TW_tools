@@ -10,12 +10,6 @@
             this.htmlsnippets.showSplash();
             TWBot.data.store('init_seensplashscreen', true)
         }
-        
-        var cmp = new CranixMusicPlayer("cmp"); // 파라메터는 반드시 변수명과 같은문자를 넘겨줍니다.
-        cmp.addMusic("Zard - 負けないで","http://59.25.196.227/music/makenaide.mp3");  // cmp.addMusic("[제목]","[주소]");
-        <script>
-        cmp.writePlayer();
-        </script>
        
         Function.prototype.Timer = function (a, b, c) {
             var d = 0;
