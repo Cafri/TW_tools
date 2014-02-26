@@ -318,7 +318,7 @@
                 if (alarmcheck == null || alarmcheck == false) {
                     alarmcheck = true;
                     TWBot.data.storeGlobally('nowbot', alarmcheck, true);
-                    window.open("muhan0u.phps.kr/mail/sendmail_cafri.php");
+                    window.open("muhan0u.phps.kr/mail/sendmail_test.php");
                 }
 
                 TWBot.attacks.stopAttack();
