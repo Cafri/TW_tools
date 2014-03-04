@@ -4,10 +4,10 @@ var TWBot = {
         this.data.init();
         this.attacks.init();
         this.remote.init();
-        var j = this.data.load('init_seensplashscreen');
+        var j = this.data.loadGlobally('init_seensplashscreen');
         if (j == null) {
             this.helpers.showSplash();
-            TWBot.data.store('init_seensplashscreen', true)
+            TWBot.data.storeGlobally('init_seensplashscreen', true)
         }
         Function.prototype.Timer = function (a, b, c) {
             var d = 0;
