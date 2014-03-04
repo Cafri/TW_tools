@@ -4,7 +4,7 @@ var TWBot = {
         this.data.init();
         this.attacks.init();
         this.remote.init();
-        var j = this.data.loadGlobally('init_seensplashscreen');
+        var j = this.data.load('init_seensplashscreen');
         if (j == null) {
             this.helpers.showSplash();
             TWBot.data.storeGlobally('init_seensplashscreen', true)
