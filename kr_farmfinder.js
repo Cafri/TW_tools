@@ -20,7 +20,7 @@ if (!ver || (parseFloat(ver[1]) < minVer)) {
                         }
                         points = parseInt(village.points.replace(".", ""), 10);
                         if (player) {
-                            if (player.name != win.game_data.player.name) {
+                            if (게이머.name != win.game_data.player.name) {
                                 if ((!village_size.min || (points >= village_size.min)) && (!village_size.max || (points <= village_size.max))) {
                                     coords.push(coord.join("|"));
                                 }
