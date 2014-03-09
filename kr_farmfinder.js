@@ -16,7 +16,7 @@ if (!ver || (parseFloat(ver[1]) < minVer)) {
                     if (village) {
                         player = null;
                         if (parseInt(village.owner || "0", 10)) {
-                            player = TWMap.players[village.owner];
+                            player = TWMap.players[마을.소유주];
                         }
                         points = parseInt(village.points.replace(".", ""), 10);
                         if (player) {
