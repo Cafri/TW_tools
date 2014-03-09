@@ -15,11 +15,13 @@ if (!ver || (parseFloat(ver[1]) < minVer)) {
                     village = TWMap.villages[coord.join("")];
                     if (village) {
                         player = null;
-                        if (parseInt(마을.소유주 || "0", 10)) {
-                            player = TWMap.players[마을.소유주];
+                        if (parseInt(village.owner || "0", 10)) {
+                            player = TWMap.players[village.owner];
                         }
                         points = parseInt(village.points.replace(".", ""), 10);
-                        if (plain || (points >= village_size.min)) && (!village_size.max || (points <= village_size.max))) {
+                        if (player) {
+                            if (player.name != win.game_data.player.name) {
+                                if ((!village_size.min || (points >= village_size.min)) && (!village_size.max || (points <= village_size.max))) {
                                     coords.push(coord.join("|"));
                                 }
                             }
@@ -38,6 +40,4 @@ if (!ver || (parseFloat(ver[1]) < minVer)) {
         self.location = win.game_data.link_base_pure.replace(/screen\=/i, "screen=map");
     }
 }
-void(0);yer) {
-                            if (player.name != win.game_data.player.name) {
-                                if ((!village_size.m
+void(0);
