@@ -1,4 +1,4 @@
-var author = "dalesmckay@gmail.com";
+var author = "4everwrz@gmail.com";
 var minVer = "7.0";
 var win = (window.frames.length > 0) ? window.main : window;
 var ver = win.game_data.version.match(/[\d|\.]+/g);
@@ -14,7 +14,7 @@ if (!ver || (parseFloat(ver[1]) < minVer)) {
                 if (coord) {
                     village = TWMap.villages[coord.join("")];
                     if (village) {
-                        player = null;
+                        게이머 = null;
                         if (parseInt(village.owner || "0", 10)) {
                             player = TWMap.players[village.owner];
                         }
