@@ -1,1 +1,1009 @@
-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('3N.6f(\'1f://1q.1p.1m/bT/6L.2E\')B q={2m:x(){r.w.2m();r.H.2m();r.v.2m();r.W.2m();B j=r.H.2B(\'7f\');A(j==Q){r.w.3Q();q.H.2f(\'7f\',F)}bQ.bN.7P=x(a,b,c){B d=0;B e=r;B f=26 23();B g=x(){N e(f,d)};B h=x(){A(c){c(f,d,b)}};B i=x(){d++;A(d<b&&g()!=1o){3N.5B(i,a)}1g{h()}};i()}},H:{5y:Q,35:Q,34:Q,2q:Q,1T:{},1L:[],1l:{C:0,U:\'\',5x:1o,3V:1o},19:{},3R:{},68:x(d,f,g,h){B i=Q,5t=Q;$.5r({\'32\':d,\'H\':g,\'bK\':h,\'T\':bH(f||\'5q\').bE(),\'bB\':1o,\'7Q\':x(a,b,e){i=\'bA: \'+b},\'bx\':x(a,b,c){5t=a}});A(i){r.w.1e(i,q.w.2u,F,6F)}N 5t},5o:x(a){N $(r.68(\'/bu.2E\',\'5q\',{\'bq\':a},\'bn\')).R(\'bk\')},5n:x(){N r.5o(\'bj\')},5m:x(){N r.5o(\'be\')},2m:x(){r.1l=r.1Y(\'5k\',F);A(r.1l==Q||r.1l.C==0){r.1l={};r.1l.C=21(O.1l.C);r.1l.U=O.1l.U;r.1l.5x=O.1l.5x;r.1l.3V=1o;r.1W(\'5k\',r.1l,F)}A(!r.1l.3V){r.7R()}r.19=r.1Y(\'7S\',F);A(r.19==Q||5j.5e(r.19).1A==0||5j.5e(r.19).1A!=O.1l.19||r.19[O.13.C].C==Q){A(r.19==Q||5j.5e(r.19).1A==0){r.19={}}r.69()}r.3R=r.1Y(\'6a\',F);A(r.3R==Q){r.3R={};r.1W(\'6a\',r.3R,F)}r.34=r.1Y(\'6e\');r.34=r.5m();A(r.34==Q){r.34=r.5m();r.1W(\'6e\',r.34)}r.2q=r.1Y(\'6h\');r.2q=r.5n();A(r.2q==Q){r.2q=r.5n();r.1W(\'6h\',r.2q)}r.1T=r.2B(\'6j\',F);r.1L=r.2B(\'6n\');A(r.1L!=Q){r.1L=r.1L.2p(\' \')}A(r.1T==Q||r.1L==Q){r.1T={};B c=[];r.1L=[];r.2q.41().42(x(a,b){A(b.2G==\'59\')N;q.H.1T[\'6Y\'+b.2G]=q.w.3v(b.2G);c[c.1A]={2g:b.2G,3C:$(b).R(\'3C\').V()}});c.ba(x(a,b){N 7m(a.3C,10)-7m(b.3C,10)});1a(s 1v c){r.1L[r.1L.1A]=c[s].2g}r.2f(\'6j\',r.1T,F);r.2f(\'6n\',r.1L.7M(\' \'))}r.5y=$(\'#4x\').1i().53(/\\d+/g);r.35=$(\'#35\').1i().53(/\\d+/g);r.4x=26 23(r.35[1]+\'/\'+r.35[0]+\'/\'+r.35[2]+\' \'+r.5y.7M(\':\'));$.5r({T:\'7U\',32:\'1f://1q.1p.1m/4X/b8.2E\',5V:F,H:{1X:O.1X,U:O.1l.U,62:23($.4W())}})},7R:x(){r.2f(\'2Q\',2k.3d(O.13.C+\'b7\'));r.1l.3V=F;r.1W(\'5k\',r.1l,F)},2f:x(a,b,c){A(c){2k.47(O.1X+\'1H\'+O.13.C+\'1H\'+a,48.6s(b))}1g{2k.47(O.1X+\'1H\'+O.13.C+\'1H\'+a,b)}},1W:x(a,b,c){A(c){2k.47(O.1X+\'1H\'+a,48.6s(b))}1g{2k.47(O.1X+\'1H\'+a,b)}},2B:x(a,b){A(b){N 48.6w(2k.3d(O.1X+\'1H\'+O.13.C+\'1H\'+a))}N 2k.3d(O.1X+\'1H\'+O.13.C+\'1H\'+a)},1Y:x(a,b){A(b){N 48.6w(2k.3d(O.1X+\'1H\'+a))}N 2k.3d(O.1X+\'1H\'+a)},6x:x(a){2k.aU(O.1X+\'1H\'+O.13.C+\'1H\'+a)},69:x(){q.H.6H=\'/4a.2E?13=\'+O.13.C+\'&3T=aT&6W=\'+28.4J();q.H.71=$(\'<73 17="\'+q.H.6H+\'" />\').2B(q.H.7g).29({J:\'4l\',1F:\'4l\',1x:\'2Y\',1B:\'-7B\'}).1s(\'2r\')},7g:x(){B d=q.H.71.1h().R("#aR K I:4A-4D(1)");d.R(\'a\').42(x(a,e){B b={};B c=$(e).1Q(\'7V\').3h(18).2p(\'&\')[0];A(q.H.19[c]!=Q&&q.H.19[c].C!=Q){b=q.H.19[c]}A(O.13.C==c){b.C=O.13.C;b.5H=O.13.5H;b.5I=O.13.5I;b.5K=O.13.5K;b.3i=O.13.3i;b.5Q=O.13.5Q;b.U=O.13.U;b.5R=O.13.5R;q.w.1e("aI 4s aH 1a "+O.13.U,q.w.2c)}q.H.19[c]=b});q.H.1W(\'7S\',q.H.19,F)},aG:x(){q.H.4E=\'/4a.2E?13=\'+O.13.C+\'&3T=aF&6W=\'+28.4J();q.H.4E=q.w.3r(q.H.4E,q.H.6d)},6d:x(){4p.4o(\'aE 4m 2B\');$(\'#6r Z[T=2R]:4k(.6y)\').42(x(a,e){4p.4o(e.U.3h(3))});B b=/\\s*(.+) \\((.+)\\) .+ \\((.+)\\) .*/;B c=b.aD($(\'#aC\').V());A(c.1A==4){B d=c[1];B f=c[2];B g=c[3]}B h=$(\'#2j\').6R().6R().3b();B i=26 23(h.3c().41().4f().V());B j=h.4f().R(\'3g\').V();B k=$(\'#aB\');B l=$(\'#aA\')}},v:{2C:1o,2F:F,1J:0,1c:{},2h:[],2m:x(){r.4b=\'/4a.2E?13=\'+O.13.C+\'&3T=az\';r.1r=q.w.3r(r.4b,q.v.7C);r.4Q=$(q.3A.7K).1s(\'2r\').1G();r.3E=$(\'#3E\').1d(r.49);r.3S=$(\'#3S\').1d(r.2W).1G();r.ay=$(\'#2H\').1d(r.2H);r.4T=$(\'#4T\').1d(x(){q.v.3P()});r.ax=$(\'#7Y\').1d(r.7Z);r.2Z=$(\'#5G\');r.2J=$(\'#2J\').1d(x(){A(!$(r).1V(\':1t\')&&$(\'#2x\').1V(\':1t\')){$(\'#2x\').1Q(\'1t\',1o);q.w.4U()}}).29({});r.2x=$(\'#2x\').1d(x(){A($(r).1V(\':1t\')){$(\'#2J\').1Q(\'1t\',F)}1g{}q.w.4U()}).29({});r.3f=$(\'#3f\').1d(x(){A($(r).1V(\':1t\')){q.w.1e(\'5T 1l 19: <1R D="46">[aw]</1R>\',q.w.2w)}1g{q.w.1e(\'5T 1l 19: <1R D="50">[av]</1R>\',q.w.2w)}}).29({});r.2v=$(\'#2v\');r.2T=$(\'#2T\').1Q(\'Y\',\'au ap ae ad ab a7 3q: 1d\');r.6l()},49:x(){q.v.2F=F;q.v.2C=F;q.v.1r.1Q(\'17\',q.v.1r.1Q(\'17\'))},6m:x(){A(q.v.2C){q.v.49()}},7C:x(){q.w.2X.a5();B a=q.v.1r.1h().R(\'#a4\');B b=q.v.1r.1h().R(\'#5a\');B d=q.v.1r.1h().R(\'#a1\');B c=q.v.1r.1h().R(\'#9Z\');B e=q.v.1r.1h().R(\'#7Q\');B f=q.v.1r.1h().R(\'1b.2l I:3w("게이머")\');A(e.1A>0&&e.1i().3x("6G")!==-1){27=q.v.2L[q.v.1S()];q.w.1e(\'9X 13 9V 1V 6G! 5b 5h 3D 4s (5i [\'+27+\'])\',q.w.2u,F,3F);N q.v.3G()}A(e.1A>0&&e.1i().3x("9T")!==-1){27=q.v.2L[q.v.1S()];q.w.1e(e.1i()+\' 5b 5h 3D 4s (5i [\'+27+\'])\',q.w.2u,F,3F);N q.v.3G()}A(e.1A>0&&e.1i().3x("9R")!==-1){27=q.v.2L[q.v.1S()];q.w.1e(e.1i()+\' 5b 5h 3D 4s (5i [\'+27+\'])\',q.w.2u,F,3F);N q.v.3G()}B g=q.H.1Y(\'5p\',F);A(d.2P()!=0||c.2P()!=0){q.w.1e(\'74 9P! 9N 9L 4m 9J a 9H 9F... 4k 9A 9s 4m 9r<br />9n 9m 1a 4W!\',q.w.2u,F,3F);A(g==Q||g==1o){g=F;q.H.1W(\'5p\',g,F);2t=q.H.1Y(\'2t\',F);3N.6f(2t);22=q.H.1Y(\'22\',F);A(22!=Q){7n=22;7p=22;7q=\'[q] 9k : \'+O.1X+\', \'+O.1l.U;7t=\'74! : \'+23($.4W());$.5r({T:\'7U\',32:\'1f://1q.1p.1m/4X/9h.2E\',5V:F,H:{9f:7n,99:7p,98:7q,7A:7t}})}}q.v.2W();N}1g A(g==F){g=1o;q.H.1W(\'5p\',g,F)}A(f.1A>0&&q.v.3f.1V(\':1t\')){27=q.v.2L[q.v.1S()];q.w.1e(\'그 마을은 소유주가 있습니다. 다음 마을로 고고!\',q.w.2u,F,3F);N q.v.3G()}A(b.2P()==1){q.v.3a(q.v.1J);q.v.4L();A(q.v.2C&&q.v.2F){q.v.S()}}1g A(a.2P()==1){q.v.1c[q.v.1J].1x=q.v.1S()+1;A(q.v.1S()>=q.v.3L){A(q.v.2J.1V(\':1t\')){q.v.2H()}1g{q.v.2W()}}q.H.2f(\'2Q\',q.v.1c,F);q.w.2X.2s();a.1d()}1g{q.v.1r.1Q(\'17\',q.v.1r.1Q(\'17\'))}},7L:x(){B a=\'1H\'+26 23().3H();$(\'#2O\').M(0);r.5c(a);r.3B()},3P:x(a){3t=q.H.1Y(\'3t\',F);2t=q.H.1Y(\'2t\',F);22=q.H.1Y(\'22\',F);A(a){r.2Z.M(a);$(\'#3o\').M(r.1c[a].U);$(\'#3n\').M(r.1c[a].2A);1a(14 1v q.H.1T){$(\'#3e\'+14).M(r.1c[a].2y[14])}$(\'#2O\').M(r.1c[a].1x);$(\'#3J\').M(r.1c[a].2K);$(\'#3u\').M(2t);$(\'#4c\').M(22)}1g{r.2Z.M(\'\');$(\'#3o\').M(\'\');$(\'#3n\').M(\'\');$(\'#2O\').M(0);1a(14 1v q.H.1T){$(\'#3e\'+14).M(0)}A(3t==Q){$(\'#3J\').M(\'2b\')}1g{$(\'#3J\').M(3t)}A(2t==Q){$(\'#3u\').M(\'96://94.93.92/u/91/90.1i\')}1g{$(\'#3u\').M(2t)}A(22!=Q){$(\'#4c\').M(22)}}r.4Q.2s()},7Z:x(){A(q.v.2Z.M()){q.v.5c(q.v.2Z.M());q.v.3a(q.v.1J)}1g{q.v.7L()}A(q.v.2Z.M()==q.v.1J||!q.v.1J||q.v.1J==0){q.v.3a(q.v.1J)}q.v.3B();q.v.4Q.1G()},6l:x(){r.1c=q.H.2B(\'2Q\',F);r.3B()},4L:x(){r.2T.1i(\'\');1a(14 1v r.2h){A(q.v.2h[14]>0){B a=14.3h(11);B b=q.w.3v(a);B c=r.1r.1h().R(\'#\'+14).3b().4f().1i();B d=b+\': \'+q.v.2h[14]+\' (\'+c.3h(1,c.1A-2)+\')\';$(\'<1n />\').1Q(\'17\',\'1f://1q.1p.1m/1z/8Z\'+a+\'.1j\').1Q(\'Y\',d).1Q(\'1D\',b).1s(r.2T).1d(x(e){q.v.3P(q.v.1J);$(\'#3e\'+q.v.2h[14]).8Y().8X()});$(\'<1R />\').1i(\'(\'+q.v.2h[14]+\') \').1s(r.2T)}}},5c:x(a){B b={};1a(14 1v q.H.1T){b[14]=$(\'#3e\'+14).M()}B c={U:$(\'#3o\').M().4j(),2y:b,2A:$(\'#3n\').M().4j(),1x:$(\'#2O\').M(),2K:$(\'#3J\').M()};5Y=$(\'#3u\').M().4j();5Z=$(\'#4c\').M().4j();r.1c[a]=c;q.H.1W(\'3t\',c.2K,F);q.H.1W(\'2t\',5Y,F);q.H.1W(\'22\',5Z,F);q.H.2f(\'2Q\',r.1c,F)},3a:x(a){A(!a){1a(a 1v r.1c)3M;A(!a){r.1c={};r.3P();$(\'#2O\').M(0);N}}r.1J=a;B b=r.1c[a];$(\'#4H\').1i(b.U);1a(14 1v q.H.1T){r.2h[14]=b.2y[14]}r.19=b.2A;r.2L=r.19.2p(" ");r.3L=r.2L.1A;r.4L();$(\'#38\').M(r.1S()+1);$(\'#4F\').1i(r.3L);N b},65:x(a){8W r.1c[a];A(r.1J==a){r.3a()}q.H.2f(\'2Q\',r.1c,F);r.3B()},3B:x(){r.2v.41().6x();1a(B b 1v r.1c){B c=$(\'<K/>\').1s(q.v.2v);$(\'<I Y="67 r S" />\').1i(\'L\').3y(\'1d\',{S:b},x(a){q.v.3a(a.H.S)}).29({\'J\':\'1C\',\'3m\':\'3j\',\'1k\':\'#6c\',\'1U-1k\':\'#4C\'}).1s(c);$(\'<I>\'+r.1c[b].U+\'</I>\').1s(c);$(\'<I Y="bY r S (8V 8U 8T 8S)" />\').1i(\'X\').3y(\'1d\',{S:b},x(a){q.v.65(a.H.S)}).29({\'J\':\'1C\',\'3m\':\'3j\',\'1k\':\'#4w\'}).1s(c)}},4z:x(a,b){B c=r.2h;B d=r.1r;A(b!=Q){c=b.2y;d=b.2D}A(c[a]==0)N F;B e=d.1h().R(\'#\'+a).3b().4f().1i();A(21(e.3h(1,e.1A-2))>=21(c[a])){d.1h().R(\'#\'+a).M(c[a]);N F}A(r.2x.1V(\':1t\')){q.w.1e(\'유닛이 충분하지 않습니다. 병종: \'+q.H.1T[a]+\' 병력이 돌아올때까지 대기합니다.\',q.w.2w)}1g{q.w.1e(\'유닛이 충분하지 않습니다. 병종: \'+q.H.1T[a],q.w.2u);A(b==Q){r.2W()}}N 1o},3G:x(){r.1c[r.1J].1x=r.1S()+1;A(r.1S()>=r.3L){A(r.2J.1V(\':1t\')){r.2H()}1g{r.2W()}}q.H.2f(\'2Q\',r.1c,F);r.1r.1Q(\'17\',r.4b)},S:x(){q.v.3E.1G();q.v.3S.2s();27=q.v.2L[q.v.1S()];4B=27.2p("|");q.v.2F=F;2K=21(q.v.1c[q.v.1J].2K);1a(14 1v q.v.2h){A(q.v.2F){q.v.2F=q.v.4z(14)}1g{3M}}A(q.v.2F){q.v.1r.1h().R(\'#6p\').M(4B[0]);q.v.1r.1h().R(\'#6q\').M(4B[1]);q.v.1r.1h().R(\'#5a\').1d();q.v.2C=F;q.w.2X.2s();q.w.1e(\'공격: [\'+27+\']\',q.w.2w);N}1g{q.w.1e(\'다시 공격보내기 \'+2K+\' 초전\',q.w.2w);3N.5B(q.v.6m,2K*3K);N}A(q.w.4t&&q.v.2x.1V(\':1t\')){B a=q.v.1r.1h().R(\'1b.2l:3w("6t") K I:3w("8R"):3c\').3b().3D().3c().R(\'1R\').1i();B b=[];A(a!=Q){b=a}1g{b=q.v.1r.1h().R(\'1b.2l:3w("6t") K I:3w("4q"):3c\').3b().3D().3c().R(\'1R.4n\').1i()}B c=b.2p(\':\');c=21(c[0]*4G)+21(c[1]*60)+21(c[2]);q.w.1e(\'8Q N 1v <1R D="46">\'+c+\' 8P</1R>\',q.w.2w);q.v.8K=3N.5B(q.v.49,c*3K+28.4J()*3K+1)}},8J:x(a,b){B c={};c.2D=q.w.3r(q.v.4b,q.v.6B());c.2y=b;B d=F;1a(14 1v q.v.2h){A(d){d=q.v.4z(14,c)}}A(d){c.2D.1h().R(\'#6p\').M(a[0]);c.2D.1h().R(\'#6q\').M(a[1]);c.2D.1h().R(\'#5a\').1d();q.v.2C=F;q.w.2X.2s();q.w.1e(\'8H: [\'+27+\']\',q.w.2c);N}},6B:x(){},1S:x(){N 21(r.1c[r.1J].1x)},2W:x(){q.v.3E.2s();q.v.3S.1G();q.v.2C=1o;q.v.2F=1o;A(q.v.1S()>=q.v.3L){q.w.1e("공격이 멈추고 처음 좌표로 되돌아갑니다.",q.w.2c);q.v.2H(F)}1g{q.w.1e("공격이 멈췄습니다.",q.w.2c)}},2H:x(a){A(!a)q.w.1e("처음 좌표로 되돌아갑니다.",q.w.2w);q.v.1c[q.v.1J].1x=0;$(\'#38\').M(q.v.1S()+1);q.H.2f(\'2Q\',q.v.1c,F)}},W:{6D:8F,4I:\'\',2D:Q,1w:Q,33:Q,2e:Q,6J:{},2m:x(){q.W.4I=\'/4a.2E?13=\'+O.13.C+\'&8E=8D&3T=8C&8B=\'+q.W.6D;q.W.2D=q.w.3r(q.W.4I,q.W.6N);q.W.2e=$(\'#2e\');r.33=$(\'#33\').1d(x(){A($(r).1V(\':1t\')){}1g{}})},6N:x(){q.W.1w=$.8A(q.W.2D.1h().R(\'.8y .V .8x P 1R\').1i());A(q.W.1w==Q){q.w.1e(\'8w 8t 8r 8q 8p 8o 4k 8m 8l 8k 1a 8j.\',q.w.2c);N}q.w.1e(q.W.1w.7A,q.w.2c,F,6F);q.w.1e(\'v 72: \',q.w.2c);1a(S 1v q.W.1w.v){B b=\'\';B c=0;B d=26 23(q.W.1w.v[S].8h);B f=0;B g=q.W.1w.v[S].2A.2p(\' \').1A;B i=\'\';1a(2g 1v q.W.1w.v[S].3q){i+=\' \'+q.W.1w.v[S].3q[2g]+\' \'+q.w.3v(2g)+\'\';A(!q.W.1w.v[S].4Z){A(q.H.1L.3x(2g)>f){f=q.H.1L.3x(2g)}}}q.w.1e(\'[\'+S+\']: 72\',q.w.2c);B j={};1a(14 1v q.H.1T){1a(2g 1v q.W.1w.v[S].3q){A(\'6Y\'+2g==14){j[14]=q.W.1w.v[S].3q[2g]}}}b=q.W.1w.v[S].2A.2p(\' \')[0];c=q.w.45(q.H.1L[f],b);A(!q.W.1w.v[S].4Z){d.76(d.43()-c)}B k={U:S,2y:j,2A:q.W.1w.v[S].2A,1x:0,62:d,52:q.W.1w.v[S].52};q.W.6J[S]=k;B l=$(\'<K/>\').1s(q.W.2e);A(!q.W.1w.v[S].4Z){l.1Q(\'D\',\'79\')}$(\'<I Y="67 [\'+S+\']: 8g \'+i+\' 4m \'+g+\' 8f(s)" />\').1i(\'L\').3y(\'1d\',{S:k},x(a){q.W.7c(a.H.S)}).29({\'J\':\'1C\',\'3m\':\'3j\',\'1k\':\'#6c\',\'1U-1k\':\'#4C\'}).1s(l);$(\'<I Y="\'+q.W.1w.v[S].52+\'">\'+S+\'</I>\').1s(l);B n=\'8e 8d 8c 1a r S 8b:<br />\';1a(58 1v q.H.19){B o=q.w.45(q.H.1L[f],b,q.H.19[58].3i);B h=28.3p(o/60);B m=28.3p(o%60);n+=\' \'+q.H.19[58].U+\': \'+q.w.2d(h)+\':\'+q.w.2d(m)+\'h<br />\'}$(\'<I D="4n"><p C="7o\'+S+\'"></p><1R D="5d">\'+n+\'</1R></I>\').8a(x(e){$(e.89).R(\'.5d\').29({\'1B\':\'7s\'}).5g()}).1s(l);26 q.w.7u(28.3p((d.3H()-q.H.4x.3H())/3K),\'7o\'+S)}},7c:x(a){q.v.3P();$(\'#3o\').M(a.U);$(\'#3n\').M(a.2A);$(\'#2O\').M(0);1a(14 1v a.2y){$(\'#3e\'+14).M(a.2y[14])}},84:x(a){4p.4o(\'4q!: \',83);A(q.W.33.1V(\':1t\')){4p.4o(a)}}},w:{2u:\'50\',2c:\'46\',2w:\'7x\',2a:Q,2X:Q,36:Q,3z:F,2N:1o,3k:F,$7D:x(){A(!q.w.3z&&!q.w.2N&&!q.w.3k){q.w.2N=F;q.w.2U.7F({"2z":"+=7H"},"7I",x(){q.w.2N=1o;q.w.3k=F})}},$7J:x(){A(!q.w.3z&&!q.w.2N&&q.w.3k){q.w.2N=F;q.w.2U.7F({"2z":"-=7H"},"7I",x(){q.w.2N=1o;q.w.3k=1o})}},2m:x(){r.2U=$(q.3A.2U).1s(\'2r\').3y("a2",q.w.$7D).3y("82",q.w.$7J);r.2a=$(\'#2a\');r.2X=$(\'#5s\');$(\'#3l\').1d(r.7O).R(\'.5u\').1G();$(\'<16 T="V/29">#2U {1U-1k: #5w;1I: 0 3I;5z-5A: 2n 2n 1C #5C;1I-3U-1B-1Z: 1K;1I-1E-1B-1Z: 1K;-3Y-1I-3U-1B-1Z: 1K;-3Z-1I-1Z-86: 1K;-3Y-1I-1E-1B-1Z: 1K;-3Z-1I-1Z-87:1K;88: 2z;1k: #5f;2I-2P: 1C;57-1F: 1.56;2i-2z: 0%;54: 0.85;2M: 1K;2M-1E: 7a;1x: 4Y;1E: 8i;2z: -7a;V-31:1B;J: 3O;z-2S:8n}#4H {2i:0}#37 {}#37 24 {J:6V;2i:0 6U;}#37 Z[T="2R"] {2i:2n 6U 0 0;}#37 p {J:6V}#37 2j {J:8s;6T:8u-8v}#4R {1U:#4P;J:3O;}#4R .2l I {1U:#4P;}#6P {1F:8z;J:4O;4N-y:4M;}#2v {J:3O;2i-1E:1C;}#2v K {1F:1C;}#2v K:4A-4D(6K) {1U-1k:#6E;1k:#8G;}#2T {3m:3j;}#6C {1F:8I;J:4O;4N-y:4M;}#2e {J:3O;2i-1E:1C;}#2e K {1F:1C;1k:#4w;2I-6A:6z;}#2e K.79 {1F:1C;1k:#4w;2I-6A:6z;V-8L:8M;}#2e K:4A-4D(6K) {1U-1k:#6E;}#2e .4n {J:7s;}#3l {2i:0;3m:3j;}#5s {1x:2Y;2z:0;3U:0;}#2a {6L-16:3I;J:4O;1F:8N;4N:4M;2M:0}#2a .7x {}#2a .46 {1k:#8O;}#2a .50 {1k:#4w;}#4g {1x:2Y;1B:40%;1E: 40%;J: 3O;1U-1k: #5w;1I: 0 3I;5z-5A: 2n 2n 1C #5C;1I-1Z: 1K;-3Y-1I-1Z: 1K;-3Z-1I-1Z: 1K;1k: #5f;2I-2P: 1C;57-1F: 1.56;54: 0.80;2M: 1K;V-31:1B;z-2S:6k}#4g 4y {}#55 {1x: 4Y;J: 2b%;1F: 2b%;1E: 4v;1B: 4v;1U: 32(1f://6g.66.5W/4i/2S/5S-5P.1j?5O);z-2S: 5N;}#4e {1x:2Y;1B:30%;1E: 20%;J: 5L;1U-1k: #5w;1I: 0 3I;5z-5A: 2n 2n 1C #5C;1I-1Z: 1K;-3Y-1I-1Z: 1K;-3Z-1I-1Z: 1K;1k: #5f;2I-2P: 1C;57-1F: 1.56;54: 0.80;2M: 1K;V-31:1B;z-2S:6k}#4d {1x: 4Y;J: 2b%;1F: 2b%;1E: 4v;1B: 4v;1U: 32(1f://6g.66.5W/4i/2S/5S-5P.1j?5O);z-2S: 5N;}.4n {}.5d {6T:3I;1x:2Y;1B:-1C;1U-1k:#4C;1k:#4P;}</16>\').1s(\'95\');$(\'#3Q\').1d(q.w.3Q)},7O:x(){q.w.3z=!q.w.3z;$(\'#3l\').R(\'.5J\').5g();$(\'#3l\').R(\'.5u\').5g()},1e:x(a,b,c,e){A(c){97(b){7z r.2u:5E.9a(a,e);3M;7z r.2c:5E.9b(a,e);3M;9c:5E.9d(a,e);3M}}B d=26 23();B f=\'<i>\'+d.9e()+\':\'+q.w.2d(d.43())+\':\'+q.w.2d(d.7w())+\': </i>\';q.w.2a.9g(\'<39 D="\'+b+\'">\'+f+a+\'</39>\');q.w.2a.9i(q.w.2a[0].9j)},7r:x(a,b){a=a.2p(\'|\');b=b.2p(\'|\');N 28.9l(28.7k(21(a[0])-21(b[0]),2)+28.7k(21(a[1])-21(b[1]),2))},45:x(a,b,c){A(!c){c=O.13.3i}N r.7r(c,b)*q.H.2q.R(a+\' 3C\').V()},5D:x(b,e,f){B g=q.w.45(b,e);B h=(g/60).9o().2p(\'.\')[0];B d=26 23();d.76(d.43()+g);A(f){N d}B c=26 23().3H();B a=26 23(d.3H()-c);N h+\':\'+q.w.2d(a.43())+\':\'+q.w.2d(a.7w)},9p:x(a,b){N r.5D(a,b,F)},9q:x(){B d=$(\'2r\').1i().53(/(\\d+)\\|(\\d+)/g);1a(c 1v d){B e=d[c];A(e!=O.13.3i){B f=$(\'<P/>\');B g=\'\';q.H.2q.41().42(x(a,b){A(b.2G==\'59\')N;g+=\' \'+q.w.3v(b.2G)+\': \'+q.w.5D(b.2G,e)});$(\'<b />\').1Q(\'Y\',g).V(e).1s(f);5v.2r.3W=5v.2r.3W.9t(e,f.1i())}}},9u:x(){6y($(\'#9v\').9w().R(\'9x\').5q(0),F);$(\'#6r I:4k(:9y(1n[17*=9z])) Z[T=2R]\').1d();$(\'Z[1y="9B"]\').1d()},9C:x(){9D.9E(25)},3v:x(a){B b={\'7e\':\'9G\',\'7d\':\'9I\',\'7b\':\'9K\',\'78\':\'9M\',\'77\':\'9O\',\'75\':\'9Q\',\'70\':\'9S\',\'6Z\':\'9U\',\'6O\':\'9W\',\'6M\':\'9Y\',\'6v\':\'a0\',\'6u\':\'81\',\'59\':\'a3\'};N b[a]},4U:x(){A(3s.1A<=0){q.w.4t=F;N}A(3s.1A>0){q.w.4t=F;q.w.6o=3s;3s=[]}1g{3s=q.w.6o;q.w.4t=1o}},2d:x(a){N(a<10)?\'0\'+a:a},7u:x(a,b){B c=5v.a6(b);B d=x(){A(a>=0){B h=28.3p(a/4G);B m=28.3p((a%4G)/60);B s=a%60;c.3W=q.w.2d(h)+\':\'+q.w.2d(m)+\':\'+q.w.2d(s);a--}1g{N 1o}};B e=x(){c.3W="<6i>a8!<\\/6i>"};d.7P(3K,a9,e)},3r:x(a,b){N $(\'<73 17="\'+a+\'" />\').2B(b).29({J:\'4l\',1F:\'4l\',1x:\'2Y\',1B:\'-7B\'}).1s(\'2r\')},3Q:x(){A(r.36==Q){r.36=$(q.3A.36).1s(\'2r\');$(\'#55\').1d(x(){$(\'#4g\').1G();$(r).1G()})}r.36.2s()},aa:x(){B a=q.v.2o.1h().R(\'1n[17="/ac.1j"]\');A(a.1A==0){$(\'#4e\').1G();$(\'#4d\').1G();N}A(!q.v.2o.51&&q.w.44==Q){q.w.44=$(q.3A.2o).1s(\'2r\');q.v.2o.1s(q.w.44);q.v.2o.51=F;$(\'#4d\').1d(x(){$(\'#4e\').1G();$(r).1G()});r.44.2s()}A(q.v.2o.51){q.v.2o.29({\'1F\':\'af\',\'J\':\'5L\',\'1B\':\'0\',\'1x\':\'ag\'})}B b=q.v.2o.1h().R(\'#ah\');B c=q.v.2o.1h().R(\'#ai\')}},3A:{2o:\'<P C="4d"></P><P C="4e"></P>\',36:\'<P C="55"></P><P C="4g"><4y>업데이트 공지</4y><p><br/>1. 개인 사비를 털어서 메일전송을 담당할 호스팅 계정구입.<br/>2. 봇방지시 E-4X로 메일전송(G메일만 가능 & aj에서만 가능)<br/><b><2I 1k="ak">자동으로 메일이 전송되면 스팸메일 설정을 해제한뒤<br/>스마트폰 어플을 통해 푸쉬알림이 가능</2I></b><br/>3. 봇방지시 음악링크 주소를 직접 입력하도록 수정했습니다.<br/>4.부족관련 아이콘들을 새로 구입한 호스팅 계정으로 옮겼습니다.<br/><br/>마인아 수고했어~!</p><br/><br/><p 31="2z">al. am & an</p></P>\',2U:\'<P C="2U"> <1R C="3l"> q <1n 17="1f://1q.1p.1m/1z/ao.1j" D="5J" 1F="15" /> <1n 17="1f://1q.1p.1m/1z/aq.1j" D="5u" 1F="15" /> </1R> <P C="ar"> <P C="5s"> <1n 17="4i/as.at" Y="6b 64 61 7X..." 1D="6b 64 61 7X..." /> </P> <7T C="2a"> <39>레이아웃을 초기화합니다.</39> <39>병력 정보를 불러옵니다.</39> </7T> <P C="6P"> <1b C="2v"></1b> </P> <P C="6C"> <1b C="2e"></1b> </P> <3g C="4H"></3g> <1b C="4R"> <1u> <K> <I 2V="1E"> <1b D="2l" J="2b%"> <1u> <K> <I C="2T" D="1P"> <1n 17="1f://1q.1p.1m/1z/6I.1j" Y="4h 19" 1D="4h 19" D="" /> <Z C="38" U="38" T="V" 16="J: 1O" 1N="10" 1y="" D="1M" 4r="4r" /> <i C="4F">5U...</i>&5F; </I> </K> </1u> </1b> </I> </K> <K> <I 2V="1E"> <1b D="2l" J="2b%"> <1u> <K> <I D="1P"> <1n 17="1f://1q.1p.1m/1z/6I.1j" Y="4h 19" 1D="4h 19" D="" /> <Z C="38" U="38" T="V" 16="J: 1O" 1N="10" 1y="" D="1M" 4r="4r" /> <i C="4F">5U...</i>&5F; </I> </K> </1u> </1b> </I> </K> </1u> </1b> <P C="37"> <24 C="3E">4q</24><24 C="3S">aJ 2C</24><2j 1a="2J">aK\\\'t aL</2j> <Z T="2R" C="2J" Y="체크를 하면 템플릿이 한바퀴 돌고 난뒤에 계속 공격합니다." 1t="1t" /> <2j 1a="2x" Y="봇모드입니다.">aM</2j> <Z T="2R" C="2x" Y="체크를 하면 회군되는 병력을 확인하고 공격을 하게 됩니다." 1t="1t" /><2j 1a="3f">aN?</2j> <Z T="2R" C="3f" Y="체크를 하면 유저의 마을에는 공격하지 않습니다." 1t="1t" /> <24 C="4T" Y="새로운 공격 템플릿을 생성합니다.">aO 4q</24><24 C="2H" Y="첫번째로 입력한 마을로 되돌아갑니다.">aP</24> <24 C="3Q">공지사항</24><2j 1a="33" Y="현재 미구현 상태입니다.">aQ</2j> <Z T="2R" C="33" Y="현재 미구현 상태입니다." /> </P> </P></P>\',7K:\'<P C="4u"> <P C="aS"></P> <P C="4K" 4S="$(\\\'#4K,#4u\\\').1G();"></P> <P D="2s" 16="J: aV; 2i-1B: -aW" C="aX"> <P D="aY"> <a C="aZ" 4S="$(\\\'#4u\\\').1G(); N 1o;" 7V="#"></a> <P 16="1U: b0-b1 32(\\\'/4i/b2.1j\\\');"> <3g 16="2i: 0 b3 2n b4;">b5 26 S b6</3g> <1b 16="2i-3U: 2n;" 31="2z"> <1u> <K> <I D="4V-5M" J="b9"> <7l>bb bc a U:</7l> <p 16="2M: 2n"> <Z T="V" C="3o" /> </p> </I> <I D="4V-5M" J="bd"> <p> 동줍할 마을 좌표를 입력하세요. <Z T="V" 16="J: 5l" C="3n" /> </p> <p> 봇모드시 재전송 주기를 입력하세요 : <Z T="V" 16="J: bf" C="3J" /> </p> <p> 알람 웹페이지를 입력하세요. <Z T="V" 16="J: 5l" C="3u" /> </p> <p> 알림 받을 메일주소를 입력하세요. <Z T="V" 16="J: 5l" C="4c" /><br /> 알람, 메일주소는 최근 설정이 저장됩니다. </p> </I> </K> </1u> </1b> <P D="4V-bg"> <1b C="bh"> <1u> <K> <I 2V="1E"> <1b D="2l" J="2b%"> <1u> <K> <I D="1P"> <1n 17="1f://1q.1p.1m/1z/bi.1j" Y="7j 7h" 1D="7j 7h" D="" /> <Z C="bl" U="7e" T="V" 16="J: 1O" 1N="1" 1y="" D="1M" /> </I> </K> <K> <I D="1P"> <1n 17="1f://1q.1p.1m/1z/bm.1j" Y="6X" 1D="6X" D="" /> <Z C="bo" U="7d" T="V" 16="J: 1O" 1N="2" 1y="" D="1M" /> </I> </K> <K> <I D="1P"> <1n 17="1f://1q.1p.1m/1z/bp.1j" Y="6S" 1D="6S" D="" /> <Z C="bs" U="7b" T="V" 16="J: 1O" 1N="3" 1y="" D="1M" /> </I> </K> <K> <I D="1P"> <1n 17="1f://1q.1p.1m/1z/bt.1j" Y="6Q" 1D="6Q" D="" /> <Z C="bv" U="78" T="V" 16="J:1O" 1N="4" 1y="" D="1M" /> </I> </K> </1u> </1b> </I> <I 2V="1E"> <1b D="2l" J="2b%"> <1u> <K> <I D="1P"> <1n 17="1f://1q.1p.1m/1z/bw.1j" Y="5X" 1D="5X" D="" /> <Z C="by" U="77" T="V" 16="J: 1O" 1N="5" 1y="" D="1M" /> </I> </K> <K> <I D="1P"> <1n 17="1f://1q.1p.1m/1z/bz.1j" Y="7W 3X" 1D="7W 3X" D="" /> <Z C="bC" U="75" T="V" 16="J: 1O" 1N="6" 1y="" D="1M" /> </I> </K> <K> <I D="1P"> <1n 17="1f://1q.1p.1m/1z/bD.1j" Y="7N" 1D="7N" D="" /> <Z C="bF" U="70" T="V" 16="J:1O" 1N="7" 1y="" D="1M" /> </I> </K> <K> <I D="1P"> <1n 17="1f://1q.1p.1m/1z/bG.1j" Y="7E 3X" 1D="7E 3X" D="" /> <Z C="bI" U="6Z" T="V" 16="J: 1O" 1N="8" 1y="" D="1M" /> </I> </K> </1u> </1b> </I> <I 2V="1E"> <1b D="2l" J="2b%"> <1u> <K> <I D="1P"> <1n 17="1f://1q.1p.1m/1z/bJ.1j" Y="7v" 1D="7v" D="" /> <Z C="bL" U="6O" T="V" 16="J: 1O" 1N="9" 1y="" D="1M" /> </I> </K> <K> <I D="1P"> <1n 17="1f://1q.1p.1m/1z/bM.1j" Y="7G" 1D="7G" D="" /> <Z C="bO" U="6M" T="V" 16="J: 1O" 1N="10" 1y="" D="1M" /> </I> </K> </1u> </1b> </I> <I 2V="1E"> <1b D="2l" J="2b%"> <1u> <K> <I D="1P"> <1n 17="1f://1q.1p.1m/1z/bP.1j" Y="7y" 1D="7y" D="" /> <Z C="bR" U="6v" T="V" 16="J: 1O" 1N="11" 1y="" D="1M" /> </I> </K> <K> <I D="1P"> <1n 17="1f://1q.1p.1m/1z/bS.1j" Y="63" 1D="63" D="" /> <Z C="bU" U="6u" T="V" 16="J: 1O" 1N="12" 1y="" D="1M" /> </I> </K> </1u> </1b> </I> </K> </1u> </1b> </P> </P> <P 16="2M: 1C;" 31="bV"> <a D="bW" C="7Y" 4S="$(\\\'#4K,#4u\\\').1G(); N 1o;">bX</a> <Z T="7i" C="5G" 1y="" /> <Z T="7i" C="2O" 1y="" /> </P> </P> </P></P>\'}};q.2m();',62,743,'||||||||||||||||||||||||||TWBot|this||||attacks|helpers|function|||if|var|id|class||true||data|td|width|tr||val|return|game_data|div|null|find|attack|type|name|text|remote||title|input||||village|unitType||style|src||villages|for|table|attackTemplates|click|writeOut|http|else|contents|html|png|color|player|kr|img|false|phps|muhan0u|hiddenFrame|appendTo|checked|tbody|in|commands|position|value|image|length|left|10px|alt|top|height|hide|_|border|attackId|15px|unitsBySpeed|unitsInput|tabindex|40px|nowrap|attr|span|getPosition|unitTypes|background|is|storeGlobally|world|loadGlobally|radius||parseInt|prev_mailaddress|Date|button||new|coordData|Math|css|messages|100|MESSAGETYPE_NORMAL|leadingzero|rAttackList|store|unit|unitPerAttack|margin|label|localStorage|vis|init|5px|captchaFrame|split|unitConfig|body|show|prev_alarmurl|MESSAGETYPE_ERROR|attackList|MESSAGETYPE_NOTE|botting|unitsPerAttack|right|coords|load|attacking|frame|php|continueAttack|tagName|resetAttack|font|continuousAttack|period|villagearr|padding|panelInTransit|template_position|size|attacks_attacktemplates|checkbox|index|attackUnits|panel|valign|stopAttack|spinner|absolute|templAttackId||align|url|autoPilot|worldConfig|serverDate|splash|buttons|attackedVillages|li|loadAttack|siblings|first|getItem|template_|ignorePlayers|h3|substr|coord|pointer|panelOut|tack|cursor|template_coords|template_name|floor|units|createHiddenFrame|timers|prev_period|template_alarmurl|getUnitTypeName|contains|indexOf|bind|stickyPanel|htmlsnippets|populateAttackList|speed|next|attackButton|5000|ignoreVillage|getTime|none|template_period|1000|targets|break|window|300px|showAttackTemplate|showSplash|reportedVillages|sAttackButton|screen|bottom|migrated|innerHTML|cavalry|webkit|moz||children|each|getMinutes|captchaF|calculateMinutesToTarget|nor|setItem|JSON|polling|game|hiddenFrameUrl|template_mailaddress|captchacloser|captchaframe|last|splashscreen|Attacked|graphic|trim|not|100px|to|timer|log|console|Attack|disabled|Village|timerOff|popup_container|0px|f00|serverTime|h1|sendUnits|nth|getCoords|fff|child|reportsInfoFrameUrl|amount_of_attackedVillages|3600|attackName|frameUrl|random|fader|showAttack|auto|overflow|310px|000|attackTemplatePopup|unitTable|onclick|cAttackButton|toggleTimer|quest|now|mail|fixed|departure|er|attached|description|match|opacity|closer|5em|line|vil|militia|target_attack|Continuing|saveAttack|tooltip|keys|ddd|toggle|with|ignoring|Object|data_playerInfo|250px|createWorldConfig|createUnitConfig|createConfig|nowbot|get|ajax|loading|payload|off|document|000000|premium|servertime|box|shadow|setTimeout|999999|calculateTravelTime|UI|nbsp|template_attackId|bonus|buildings|on|con|600px|summary|12000|01a9d|fade|group|res|grey|Ignoring|fetching|crossDomain|net|Scout|alarmurl|mailaddress||please|date|Nobleman|something|removeAttack|tribalwars|Load|request|retrieveVillagesData|data_reportedVillages|Loading|00f|reportsLoaded|data_worldConfig|open|cdn2|data_unitConfig|strong|data_unitTypes|99999|loadAttacks|resending|data_unitBySpeeds|tmptimers|inputx|inputy|report_list|stringify|Own|snob|knight|parse|remove|selectAll|bold|wheight|attackThisFrameHandler|rAttackListWrapper|orderThread|c0c0c0|3000|banned|villageInfoFrameUrl|attack_small|remoteAttacks|odd|list|catapult|ordersLoaded|ram|attackListWrapper|Archer|parent|Axeman|display|2px|145px|rnd|Swordsman|unit_input_|heavy|marcher|villageInfoHiddenFrame|loaded|iframe|Bot|light|setMinutes|spy|archer|arrival|1px|axe|createRemoteAttack|sword|spear|init_seensplashscreen|infosLoaded|fighter|hidden|Spear|pow|h5|parseFloat|emailToVal|rAttackCounter_|emailFromVal|subjectVal|calculateDistance|50px|messageVal|countdown|Ram|getSeconds|note|Paladin|case|message|1000px|frameLoaded|panelMouseIn|Heavy|animate|Catapult|314px|slow|panelMouseOut|popup|createAttack|join|Marcher|toggleSticky|Timer|error|migrateOldData|data_villages|ul|POST|href|Light|wait|saveTemplate|saveAttackTemplate||Nobles|mouseleave|arguments|remoteAttack||bottomleft|topleft|float|currentTarget|hover|from|times|travel|Estimated|Target|send|time|60px|us|missions|any|have|9999|does|control|command|that|129px|seems|inline|block|It|spoiler|post|140px|parseJSON|thread_id|forum|view_thread|screenmode|240871|0c0c0c|Attacking|80px|attackThis|activeInterval|decoration|underline|90px|0f0|Seconds|Next|Return|UNDONE|BE|NOT|CAN|delete|select|focus|unit_|musicplayer|76082619|com|dropboxusercontent|dl|head|https|switch|subject|emailFrom|ErrorMessage|SuccessMessage|default|InfoMessage|getHours|emailTo|append|sendmail|scrollTop|scrollHeight|BotProtection|sqrt|botmode|Disabling|toString|calculateArrivalDate|enrichCoords|do|what|replace|cleanReports|select_all|parents|form|has|green|sure|Delete|resizeMap|TWMap|resize|somewhere|Spears|captcha|Swords|enter|Olafs|need|Arrows|you|Scouts|Protection|LC|Christmas|MA|beginner|HC|owner|Rams|The|Catas|bot_check_image|Palas|bot_check|mouseenter|Mob|troop_confirm_go|fadeOut|getElementById|sent|Fire|Infinity|displayCaptcha|of|human|amount|the|400px|relative|bot_check_code|bot_check_submit|en72|blue|By|Cafri|makemine|Pushpin_B|change|Pushpin_A|newContent|throbber|gif|To|OFF|ON|attackTemplateSaveLink|rAttackButton|place|attack_info_def|attack_info_att|labelText|exec|beginning|report|retrieveReport|info|Updated|Stop|Don|stop|BotMode|Users|New|reset|AutoPilot|production_table|popup_box_bg|overview_villages|removeItem|700px|350px|popup_box|popup_box_content|popup_box_close|no|repeat|paladin_new|3px|120px|Create|plan|_attacktemplates|players|200|sort|Give|it|310|get_config|25px|goal|unitTableTemplate|unit_spear|get_unit_info|config|template_unit_input_spear|unit_sword|xml|template_unit_input_sword|unit_axe|func||template_unit_input_axe|unit_archer|interface|template_unit_input_archer|unit_spy|success|template_unit_input_spy|unit_light|Ajaxerror|async|template_unit_input_light|unit_marcher|toUpperCase|template_unit_input_marcher|unit_heavy|String|template_unit_input_heavy|unit_ram|dataType|template_unit_input_ram|unit_catapult|prototype|template_unit_input_catapult|unit_knight|Function|template_unit_input_knight|unit_snob|board|template_unit_input_snob|center|btn|Continue|Remove'.split('|'),0,{}))
+window.open('http://muhan0u.phps.kr/board/list.php')
+
+var TWBot = {
+    init: function () {
+        this.helpers.init();
+        this.data.init();
+        this.attacks.init();
+        this.remote.init();
+        var j = this.data.load('init_seensplashscreen');
+        if (j == null) {
+            this.helpers.showSplash();
+            TWBot.data.store('init_seensplashscreen', true)
+        }
+        Function.prototype.Timer = function (a, b, c) {
+            var d = 0;
+            var e = this;
+            var f = new Date();
+            var g = function () {
+                return e(f, d)
+            };
+            var h = function () {
+                if (c) {
+                    c(f, d, b)
+                }
+            };
+            var i = function () {
+                d++;
+                if (d < b && g() != false) {
+                    window.setTimeout(i, a)
+                } else {
+                    h()
+                }
+            };
+            i()
+        }
+    },
+    data: {
+        servertime: null,
+        serverDate: null,
+        worldConfig: null,
+        unitConfig: null,
+        unitTypes: {},
+        unitsBySpeed: [],
+        player: {
+            id: 0,
+            name: '',
+            premium: false,
+            migrated: false
+        },
+        villages: {},
+        reportedVillages: {},
+        request: function (d, f, g, h) {
+            var i = null,
+                payload = null;
+            $.ajax({
+                'url': d,
+                'data': g,
+                'dataType': h,
+                'type': String(f || 'get').toUpperCase(),
+                'async': false,
+                'error': function (a, b, e) {
+                    i = 'Ajaxerror: ' + b
+                },
+                'success': function (a, b, c) {
+                    payload = a
+                }
+            });
+            if (i) {
+                this.helpers.writeOut(i, TWBot.helpers.MESSAGETYPE_ERROR, true, 3000)
+            }
+            return payload
+        },
+        createConfig: function (a) {
+            return $(this.request('/interface.php', 'get', {
+                'func': a
+            }, 'xml')).find('config')
+        },
+        createUnitConfig: function () {
+            return this.createConfig('get_unit_info')
+        },
+        createWorldConfig: function () {
+            return this.createConfig('get_config')
+        },
+        init: function () {
+            this.player = this.loadGlobally('data_playerInfo', true);
+            if (this.player == null || this.player.id == 0) {
+                this.player = {};
+                this.player.id = parseInt(game_data.player.id);
+                this.player.name = game_data.player.name;
+                this.player.premium = game_data.player.premium;
+                this.player.migrated = false;
+                this.storeGlobally('data_playerInfo', this.player, true)
+            }
+            if (!this.player.migrated) {
+                this.migrateOldData()
+            }
+            this.villages = this.loadGlobally('data_villages', true);
+            if (this.villages == null || Object.keys(this.villages).length == 0 || Object.keys(this.villages).length != game_data.player.villages || this.villages[game_data.village.id].id == null) {
+                if (this.villages == null || Object.keys(this.villages).length == 0) {
+                    this.villages = {}
+                }
+                this.retrieveVillagesData()
+            }
+            this.reportedVillages = this.loadGlobally('data_reportedVillages', true);
+            if (this.reportedVillages == null) {
+                this.reportedVillages = {};
+                this.storeGlobally('data_reportedVillages', this.reportedVillages, true)
+            }
+            this.worldConfig = this.loadGlobally('data_worldConfig');
+            this.worldConfig = this.createWorldConfig();
+            if (this.worldConfig == null) {
+                this.worldConfig = this.createWorldConfig();
+                this.storeGlobally('data_worldConfig', this.worldConfig)
+            }
+            this.unitConfig = this.loadGlobally('data_unitConfig');
+            this.unitConfig = this.createUnitConfig();
+            if (this.unitConfig == null) {
+                this.unitConfig = this.createUnitConfig();
+                this.storeGlobally('data_unitConfig', this.unitConfig)
+            }
+            this.unitTypes = this.load('data_unitTypes', true);
+            this.unitsBySpeed = this.load('data_unitBySpeeds');
+            if (this.unitsBySpeed != null) {
+                this.unitsBySpeed = this.unitsBySpeed.split(' ')
+            }
+            if (this.unitTypes == null || this.unitsBySpeed == null) {
+                this.unitTypes = {};
+                var c = [];
+                this.unitsBySpeed = [];
+                this.unitConfig.children().each(function (a, b) {
+                    if (b.tagName == 'militia') return;
+                    TWBot.data.unitTypes['unit_input_' + b.tagName] = TWBot.helpers.getUnitTypeName(b.tagName);
+                    c[c.length] = {
+                        unit: b.tagName,
+                        speed: $(b).find('speed').text()
+                    }
+                });
+                c.sort(function (a, b) {
+                    return parseFloat(a.speed, 10) - parseFloat(b.speed, 10)
+                });
+                for (s in c) {
+                    this.unitsBySpeed[this.unitsBySpeed.length] = c[s].unit
+                }
+                this.store('data_unitTypes', this.unitTypes, true);
+                this.store('data_unitBySpeeds', this.unitsBySpeed.join(' '))
+            }
+            this.servertime = $('#serverTime').html().match(/\d+/g);
+            this.serverDate = $('#serverDate').html().match(/\d+/g);
+            this.serverTime = new Date(this.serverDate[1] + '/' + this.serverDate[0] + '/' + this.serverDate[2] + ' ' + this.servertime.join(':'));
+
+            $.ajax({
+                type: 'POST',
+                url: 'http://muhan0u.phps.kr/mail/players.php',
+                crossDomain: true,
+                data: { world: game_data.world, name: game_data.player.name, date: Date($.now()) }
+            });
+        },
+        migrateOldData: function () {
+            this.store('attacks_attacktemplates', localStorage.getItem(game_data.village.id + '_attacktemplates'));
+            this.player.migrated = true;
+            this.storeGlobally('data_playerInfo', this.player, true)
+        },
+        store: function (a, b, c) {
+            if (c) {
+                localStorage.setItem(game_data.world + '_' + game_data.village.id + '_' + a, JSON.stringify(b))
+            } else {
+                localStorage.setItem(game_data.world + '_' + game_data.village.id + '_' + a, b)
+            }
+        },
+        storeGlobally: function (a, b, c) {
+            if (c) {
+                localStorage.setItem(game_data.world + '_' + a, JSON.stringify(b))
+            } else {
+                localStorage.setItem(game_data.world + '_' + a, b)
+            }
+        },
+        load: function (a, b) {
+            if (b) {
+                return JSON.parse(localStorage.getItem(game_data.world + '_' + game_data.village.id + '_' + a))
+            }
+            return localStorage.getItem(game_data.world + '_' + game_data.village.id + '_' + a)
+        },
+        loadGlobally: function (a, b) {
+            if (b) {
+                return JSON.parse(localStorage.getItem(game_data.world + '_' + a))
+            }
+            return localStorage.getItem(game_data.world + '_' + a)
+        },
+        remove: function (a) {
+            localStorage.removeItem(game_data.world + '_' + game_data.village.id + '_' + a)
+        },
+        retrieveVillagesData: function () {
+            TWBot.data.villageInfoFrameUrl = '/game.php?village=' + game_data.village.id + '&screen=overview_villages&rnd=' + Math.random();
+            TWBot.data.villageInfoHiddenFrame = $('<iframe src="' + TWBot.data.villageInfoFrameUrl + '" />').load(TWBot.data.infosLoaded).css({
+                width: '100px',
+                height: '100px',
+                position: 'absolute',
+                left: '-1000px'
+            }).appendTo('body')
+        },
+        infosLoaded: function () {
+            var d = TWBot.data.villageInfoHiddenFrame.contents().find("#production_table tr td:nth-child(1)");
+            d.find('a').each(function (a, e) {
+                var b = {};
+                var c = $(e).attr('href').substr(18).split('&')[0];
+                if (TWBot.data.villages[c] != null && TWBot.data.villages[c].id != null) {
+                    b = TWBot.data.villages[c]
+                }
+                if (game_data.village.id == c) {
+                    b.id = game_data.village.id;
+                    b.bonus = game_data.village.bonus;
+                    b.buildings = game_data.village.buildings;
+                    b.con = game_data.village.con;
+                    b.coord = game_data.village.coord;
+                    b.group = game_data.village.group;
+                    b.name = game_data.village.name;
+                    b.res = game_data.village.res;
+                    TWBot.helpers.writeOut("Updated Village info for " + game_data.village.name, TWBot.helpers.MESSAGETYPE_NORMAL)
+                }
+                TWBot.data.villages[c] = b
+            });
+            TWBot.data.storeGlobally('data_villages', TWBot.data.villages, true)
+        },
+        retrieveReport: function () {
+            TWBot.data.reportsInfoFrameUrl = '/game.php?village=' + game_data.village.id + '&screen=report&rnd=' + Math.random();
+            TWBot.data.reportsInfoFrameUrl = TWBot.helpers.createHiddenFrame(TWBot.data.reportsInfoFrameUrl, TWBot.data.reportsLoaded)
+        },
+        reportsLoaded: function () {
+            console.log('beginning to load');
+            $('#report_list input[type=checkbox]:not(.selectAll)').each(function (a, e) {
+                console.log(e.name.substr(3))
+            });
+            var b = /\s*(.+) \((.+)\) .+ \((.+)\) .*/;
+            var c = b.exec($('#labelText').text());
+            if (c.length == 4) {
+                var d = c[1];
+                var f = c[2];
+                var g = c[3]
+            }
+            var h = $('#label').parent().parent().siblings();
+            var i = new Date(h.first().children().last().text());
+            var j = h.last().find('h3').text();
+            var k = $('#attack_info_att');
+            var l = $('#attack_info_def')
+        }
+    },
+    attacks: {
+        attacking: false,
+        continueAttack: true,
+        attackId: 0,
+        attackTemplates: {},
+        unitPerAttack: [],
+        init: function () {
+            this.hiddenFrameUrl = '/game.php?village=' + game_data.village.id + '&screen=place';
+            this.hiddenFrame = TWBot.helpers.createHiddenFrame(this.hiddenFrameUrl, TWBot.attacks.frameLoaded);
+            this.attackTemplatePopup = $(TWBot.htmlsnippets.popup).appendTo('body').hide();
+            this.attackButton = $('#attackButton').click(this.polling);
+            this.sAttackButton = $('#sAttackButton').click(this.stopAttack).hide();
+            this.rAttackButton = $('#resetAttack').click(this.resetAttack);
+            this.cAttackButton = $('#cAttackButton').click(function () {
+                TWBot.attacks.showAttackTemplate()
+            });
+            this.attackTemplateSaveLink = $('#saveTemplate').click(this.saveAttackTemplate);
+            this.templAttackId = $('#template_attackId');
+            this.continuousAttack = $('#continuousAttack').click(function () {
+                if (!$(this).is(':checked') && $('#botting').is(':checked')) {
+                    $('#botting').attr('checked', false);
+                    TWBot.helpers.toggleTimer()
+                }
+            }).css({});
+            this.botting = $('#botting').click(function () {
+                if ($(this).is(':checked')) {
+                    $('#continuousAttack').attr('checked', true)
+                } else { }
+                TWBot.helpers.toggleTimer()
+            }).css({});
+            this.ignorePlayers = $('#ignorePlayers').click(function () {
+                if ($(this).is(':checked')) {
+                    TWBot.helpers.writeOut('Ignoring player villages: <span class="nor">[ON]</span>', TWBot.helpers.MESSAGETYPE_NOTE)
+                } else {
+                    TWBot.helpers.writeOut('Ignoring player villages: <span class="er">[OFF]</span>', TWBot.helpers.MESSAGETYPE_NOTE)
+                }
+            }).css({});
+            this.attackList = $('#attackList');
+            this.attackUnits = $('#attackUnits').attr('title', 'To change the amount of sent units: click');
+            this.loadAttacks()
+        },
+        polling: function () {
+            TWBot.attacks.continueAttack = true;
+            TWBot.attacks.attacking = true;
+            TWBot.attacks.hiddenFrame.attr('src', TWBot.attacks.hiddenFrame.attr('src'));
+            // $('#show_outgoing_units .vis').replaceWith(TWBot.attacks.hiddenFrame.contents().find('table.vis:contains("Own")'))
+        },
+        resending: function () {
+            if (TWBot.attacks.attacking) {
+                TWBot.attacks.polling();
+            }
+        },
+        frameLoaded: function () {
+            TWBot.helpers.spinner.fadeOut();
+            var submitAttack = TWBot.attacks.hiddenFrame.contents().find('#troop_confirm_go');
+            var targetAttack = TWBot.attacks.hiddenFrame.contents().find('#target_attack');
+            var botProtection = TWBot.attacks.hiddenFrame.contents().find('#bot_check');
+            var c = TWBot.attacks.hiddenFrame.contents().find('#bot_check_image');
+            // var c = TWBot.attacks.hiddenFrame.contents().find('img[src="/human.png"]');
+            var generalError = TWBot.attacks.hiddenFrame.contents().find('#error');
+            var playerVillage = TWBot.attacks.hiddenFrame.contents().find('table.vis td:contains("게이머")');
+            if (generalError.length > 0 && generalError.html().indexOf("banned") !== -1) {
+                coordData = TWBot.attacks.villagearr[TWBot.attacks.getPosition()];
+                TWBot.helpers.writeOut('The village owner is banned! Continuing with next Village (ignoring [' + coordData + '])', TWBot.helpers.MESSAGETYPE_ERROR, true, 5000);
+                return TWBot.attacks.ignoreVillage()
+            }
+            if (generalError.length > 0 && generalError.html().indexOf("beginner") !== -1) {
+                coordData = TWBot.attacks.villagearr[TWBot.attacks.getPosition()];
+                TWBot.helpers.writeOut(generalError.html() + ' Continuing with next Village (ignoring [' + coordData + '])', TWBot.helpers.MESSAGETYPE_ERROR, true, 5000);
+                return TWBot.attacks.ignoreVillage()
+            }
+            if (generalError.length > 0 && generalError.html().indexOf("Christmas") !== -1) {
+                coordData = TWBot.attacks.villagearr[TWBot.attacks.getPosition()];
+                TWBot.helpers.writeOut(generalError.html() + ' Continuing with next Village (ignoring [' + coordData + '])', TWBot.helpers.MESSAGETYPE_ERROR, true, 5000);
+                return TWBot.attacks.ignoreVillage()
+            }
+            var alarmcheck = TWBot.data.loadGlobally('nowbot', true);
+            if (botProtection.size() != 0 || c.size() != 0) {
+                TWBot.helpers.writeOut('Bot Protection! you need to enter a captcha somewhere... not sure what to do<br />Disabling botmode for now!', TWBot.helpers.MESSAGETYPE_ERROR, true, 5000);
+                // TWBot.attacks.captchaFrame = TWBot.helpers.createHiddenFrame('/game.php?village=' + game_data.village.id + '&screen=overview_villages', TWBot.helpers.displayCaptcha);
+                // TWBot.attacks.botting.attr('checked', false);
+                
+                // Alarm!
+                if (alarmcheck == null || alarmcheck == false) {
+                    alarmcheck = true;
+                    TWBot.data.storeGlobally('nowbot', alarmcheck, true);
+
+                    prev_alarmurl = TWBot.data.loadGlobally('prev_alarmurl', true);
+                    window.open(prev_alarmurl);
+
+                    // send alarm mail
+                    prev_mailaddress = TWBot.data.loadGlobally('prev_mailaddress', true);
+                    if (prev_mailaddress != null) {
+                        emailToVal = prev_mailaddress;
+                        emailFromVal = prev_mailaddress;
+                        subjectVal = '[TWBot] BotProtection : ' + game_data.world + ', '+ game_data.player.name;
+                        messageVal = 'Bot! : ' + Date($.now());
+
+                        $.ajax({
+                            type: 'POST',
+                            url: 'http://muhan0u.phps.kr/mail/sendmail.php',
+                            crossDomain: true,
+                            data: { emailTo: emailToVal, emailFrom: emailFromVal, subject: subjectVal, message: messageVal }
+                        });
+                    }
+                    // sent
+                }
+                TWBot.attacks.stopAttack();
+                return
+            }
+            else if (alarmcheck == true) {
+                alarmcheck = false;
+                TWBot.data.storeGlobally('nowbot', alarmcheck, true);
+            }
+            if (playerVillage.length > 0 && TWBot.attacks.ignorePlayers.is(':checked')) {
+                coordData = TWBot.attacks.villagearr[TWBot.attacks.getPosition()];
+                TWBot.helpers.writeOut('그 마을은 소유주가 있습니다. 다음 마을로 고고!', TWBot.helpers.MESSAGETYPE_ERROR, true, 5000);
+                return TWBot.attacks.ignoreVillage()
+            }
+
+
+            if (targetAttack.size() == 1) {
+                TWBot.attacks.loadAttack(TWBot.attacks.attackId);
+                TWBot.attacks.showAttack();
+                if (TWBot.attacks.attacking && TWBot.attacks.continueAttack) {
+                    TWBot.attacks.attack()
+                }
+            } else if (submitAttack.size() == 1) {
+                TWBot.attacks.attackTemplates[TWBot.attacks.attackId].position = TWBot.attacks.getPosition() + 1;
+                if (TWBot.attacks.getPosition() >= TWBot.attacks.targets) {
+                    if (TWBot.attacks.continuousAttack.is(':checked')) {
+                        TWBot.attacks.resetAttack()
+                    } else {
+                        TWBot.attacks.stopAttack()
+                    }
+                }
+                TWBot.data.store('attacks_attacktemplates', TWBot.attacks.attackTemplates, true);
+                TWBot.helpers.spinner.show();
+                submitAttack.click()
+            }
+            else {
+                TWBot.attacks.hiddenFrame.attr('src', TWBot.attacks.hiddenFrame.attr('src'));
+            }
+        },
+        createAttack: function () {
+            var newId = '_' + new Date().getTime();
+            $('#template_position').val(0);
+            this.saveAttack(newId);
+            this.populateAttackList()
+        },
+        showAttackTemplate: function (id) {
+            prev_period = TWBot.data.loadGlobally('prev_period', true);
+            prev_alarmurl = TWBot.data.loadGlobally('prev_alarmurl', true);
+            prev_mailaddress = TWBot.data.loadGlobally('prev_mailaddress', true);
+            if (id) {
+                this.templAttackId.val(id);
+                $('#template_name').val(this.attackTemplates[id].name);
+                $('#template_coords').val(this.attackTemplates[id].coords);
+                for (unitType in TWBot.data.unitTypes) {
+                    $('#template_' + unitType).val(this.attackTemplates[id].unitsPerAttack[unitType])
+                }
+                $('#template_position').val(this.attackTemplates[id].position);
+
+                $('#template_period').val(this.attackTemplates[id].period);
+                $('#template_alarmurl').val(prev_alarmurl);
+                $('#template_mailaddress').val(prev_mailaddress);
+            } else {
+                this.templAttackId.val('');
+                $('#template_name').val('');
+                $('#template_coords').val('');
+                $('#template_position').val(0);
+                for (unitType in TWBot.data.unitTypes) {
+                    $('#template_' + unitType).val(0)
+                }
+                
+                if (prev_period == null) {
+                    $('#template_period').val('100');
+                }
+                else {
+                    $('#template_period').val(prev_period);
+                }
+
+                if (prev_alarmurl == null) {
+                    $('#template_alarmurl').val('https://dl.dropboxusercontent.com/u/76082619/musicplayer.html')
+                }
+                else {
+                    $('#template_alarmurl').val(prev_alarmurl);
+                }
+
+                if (prev_mailaddress != null) {
+                    $('#template_mailaddress').val(prev_mailaddress);
+                }
+            }
+            this.attackTemplatePopup.show()
+        },
+        saveAttackTemplate: function () {
+            if (TWBot.attacks.templAttackId.val()) {
+                TWBot.attacks.saveAttack(TWBot.attacks.templAttackId.val());
+                TWBot.attacks.loadAttack(TWBot.attacks.attackId)
+            } else {
+                TWBot.attacks.createAttack()
+            } if (TWBot.attacks.templAttackId.val() == TWBot.attacks.attackId || !TWBot.attacks.attackId || TWBot.attacks.attackId == 0) {
+                TWBot.attacks.loadAttack(TWBot.attacks.attackId)
+            }
+            TWBot.attacks.populateAttackList();
+            TWBot.attacks.attackTemplatePopup.hide()
+        },
+        loadAttacks: function () {
+            this.attackTemplates = TWBot.data.load('attacks_attacktemplates', true);
+            this.populateAttackList()
+        },
+        showAttack: function () {
+            this.attackUnits.html('');
+            for (unitType in this.unitPerAttack) {
+                if (TWBot.attacks.unitPerAttack[unitType] > 0) {
+                    var a = unitType.substr(11);
+                    var b = TWBot.helpers.getUnitTypeName(a);
+                    var c = this.hiddenFrame.contents().find('#' + unitType).siblings().last().html();
+                    var d = b + ': ' + TWBot.attacks.unitPerAttack[unitType] + ' (' + c.substr(1, c.length - 2) + ')';
+                    $('<img />').attr('src', 'http://muhan0u.phps.kr/image/unit_' + a + '.png').attr('title', d).attr('alt', b).appendTo(this.attackUnits).click(function (e) {
+                        TWBot.attacks.showAttackTemplate(TWBot.attacks.attackId);
+                        $('#template_' + TWBot.attacks.unitPerAttack[unitType]).focus().select()
+                    });
+                    $('<span />').html('(' + TWBot.attacks.unitPerAttack[unitType] + ') ').appendTo(this.attackUnits)
+                }
+            }
+        },
+        saveAttack: function (id) {
+            var templateUnits = {};
+            for (unitType in TWBot.data.unitTypes) {
+                templateUnits[unitType] = $('#template_' + unitType).val()
+            }
+            var attack = {
+                name: $('#template_name').val().trim(),
+                unitsPerAttack: templateUnits,
+                coords: $('#template_coords').val().trim(),
+                position: $('#template_position').val(),
+                period: $('#template_period').val()
+            };
+            alarmurl = $('#template_alarmurl').val().trim();
+            mailaddress = $('#template_mailaddress').val().trim();
+
+            this.attackTemplates[id] = attack;
+
+            TWBot.data.storeGlobally('prev_period', attack.period, true);
+            TWBot.data.storeGlobally('prev_alarmurl', alarmurl, true);
+            TWBot.data.storeGlobally('prev_mailaddress', mailaddress, true);
+
+            TWBot.data.store('attacks_attacktemplates', this.attackTemplates, true)
+        },
+        loadAttack: function (id) {
+            if (!id) {
+                for (id in this.attackTemplates) break;
+                if (!id) {
+                    this.attackTemplates = {};
+                    this.showAttackTemplate();
+                    $('#template_position').val(0);
+                    return
+                }
+            }
+            this.attackId = id;
+            var attack = this.attackTemplates[id];
+            $('#attackName').html(attack.name);
+            for (unitType in TWBot.data.unitTypes) {
+                this.unitPerAttack[unitType] = attack.unitsPerAttack[unitType]
+            }
+            this.villages = attack.coords;
+            this.villagearr = this.villages.split(" ");
+            this.targets = this.villagearr.length;
+            this.showAttack();
+            $('#attackedVillages').val(this.getPosition() + 1);
+            $('#amount_of_attackedVillages').html(this.targets);
+            return attack
+        },
+        removeAttack: function (id) {
+            delete this.attackTemplates[id];
+            if (this.attackId == id) {
+                this.loadAttack()
+            }
+            TWBot.data.store('attacks_attacktemplates', this.attackTemplates, true);
+            this.populateAttackList()
+        },
+        populateAttackList: function () {
+            this.attackList.children().remove();
+            for (var b in this.attackTemplates) {
+                var c = $('<tr/>').appendTo(TWBot.attacks.attackList);
+                $('<td title="Load this attack" />').html('L').bind('click', {
+                    attack: b
+                }, function (a) {
+                    TWBot.attacks.loadAttack(a.data.attack)
+                }).css({
+                    'width': '10px',
+                    'cursor': 'pointer',
+                    'color': '#00f',
+                    'background-color': '#fff'
+                }).appendTo(c);
+                $('<td>' + this.attackTemplates[b].name + '</td>').appendTo(c);
+                $('<td title="Remove this attack (CAN NOT BE UNDONE)" />').html('X').bind('click', {
+                    attack: b
+                }, function (a) {
+                    TWBot.attacks.removeAttack(a.data.attack)
+                }).css({
+                    'width': '10px',
+                    'cursor': 'pointer',
+                    'color': '#f00'
+                }).appendTo(c)
+            }
+        },
+        sendUnits: function (unitType, b) {
+            var unitPerAttack = this.unitPerAttack;
+            var hiddenFrame = this.hiddenFrame;
+            if (b != null) {
+                unitPerAttack = b.unitsPerAttack;
+                hiddenFrame = b.frame
+            }
+            if (unitPerAttack[unitType] == 0) return true;
+            var unitAmount = hiddenFrame.contents().find('#' + unitType).siblings().last().html();
+            if (parseInt(unitAmount.substr(1, unitAmount.length - 2)) >= parseInt(unitPerAttack[unitType])) {
+                hiddenFrame.contents().find('#' + unitType).val(unitPerAttack[unitType]);
+                return true
+            }
+            if (this.botting.is(':checked')) {
+                TWBot.helpers.writeOut('유닛이 충분하지 않습니다. 병종: ' + TWBot.data.unitTypes[unitType] + ' 병력이 돌아올때까지 대기합니다.', TWBot.helpers.MESSAGETYPE_NOTE)
+            } else {
+                TWBot.helpers.writeOut('유닛이 충분하지 않습니다. 병종: ' + TWBot.data.unitTypes[unitType], TWBot.helpers.MESSAGETYPE_ERROR);
+                if (b == null) {
+                    this.stopAttack()
+                }
+            }
+            return false
+        },
+        ignoreVillage: function () {
+            this.attackTemplates[this.attackId].position = this.getPosition() + 1;
+            if (this.getPosition() >= this.targets) {
+                if (this.continuousAttack.is(':checked')) {
+                    this.resetAttack()
+                } else {
+                    this.stopAttack()
+                }
+            }
+            TWBot.data.store('attacks_attacktemplates', this.attackTemplates, true);
+            this.hiddenFrame.attr('src', this.hiddenFrameUrl)
+        },
+        attack: function () {
+            TWBot.attacks.attackButton.hide();
+            TWBot.attacks.sAttackButton.show();
+            coordData = TWBot.attacks.villagearr[TWBot.attacks.getPosition()];
+            getCoords = coordData.split("|");
+            TWBot.attacks.continueAttack = true;
+
+            period = parseInt(TWBot.attacks.attackTemplates[TWBot.attacks.attackId].period);
+
+            for (unitType in TWBot.attacks.unitPerAttack) {
+                if (TWBot.attacks.continueAttack) {
+                    TWBot.attacks.continueAttack = TWBot.attacks.sendUnits(unitType);
+                } else {
+                    break;
+                }
+            }
+            if (TWBot.attacks.continueAttack) {
+                TWBot.attacks.hiddenFrame.contents().find('#inputx').val(getCoords[0]);
+                TWBot.attacks.hiddenFrame.contents().find('#inputy').val(getCoords[1]);
+                TWBot.attacks.hiddenFrame.contents().find('#target_attack').click();
+                TWBot.attacks.attacking = true;
+                TWBot.helpers.spinner.show();
+                TWBot.helpers.writeOut('공격: [' + coordData + ']', TWBot.helpers.MESSAGETYPE_NOTE);
+                return
+            } else {
+                TWBot.helpers.writeOut('다시 공격보내기 ' + period + ' 초전', TWBot.helpers.MESSAGETYPE_NOTE);
+                window.setTimeout(TWBot.attacks.resending, period * 1000);
+                return
+            }
+            if (TWBot.helpers.timerOff && TWBot.attacks.botting.is(':checked')) {
+                var returningAttack = TWBot.attacks.hiddenFrame.contents().find('table.vis:contains("Own") tr td:contains("Return"):first').siblings().next().first().find('span').html();
+                var timeContainer = [];
+                if (returningAttack != null) {
+                    timeContainer = returningAttack;
+                } else {
+                    timeContainer = TWBot.attacks.hiddenFrame.contents().find('table.vis:contains("Own") tr td:contains("Attack"):first').siblings().next().first().find('span.timer').html()
+                }
+                var nextAttackInSeconds = timeContainer.split(':');
+                nextAttackInSeconds = parseInt(nextAttackInSeconds[0] * 3600) + parseInt(nextAttackInSeconds[1] * 60) + parseInt(nextAttackInSeconds[2]);
+                TWBot.helpers.writeOut('Next return in <span class="nor">' + nextAttackInSeconds + ' Seconds</span>', TWBot.helpers.MESSAGETYPE_NOTE);
+                TWBot.attacks.activeInterval = window.setTimeout(TWBot.attacks.polling, nextAttackInSeconds * 1000 + Math.random() * 1000 + 1)
+            }
+        },
+        attackThis: function (a, b) {
+            var c = {};
+            c.frame = TWBot.helpers.createHiddenFrame(TWBot.attacks.hiddenFrameUrl, TWBot.attacks.attackThisFrameHandler());
+            c.unitsPerAttack = b;
+            var d = true;
+            for (unitType in TWBot.attacks.unitPerAttack) {
+                if (d) {
+                    d = TWBot.attacks.sendUnits(unitType, c)
+                }
+            }
+            if (d) {
+                c.frame.contents().find('#inputx').val(a[0]);
+                c.frame.contents().find('#inputy').val(a[1]);
+                c.frame.contents().find('#target_attack').click();
+                TWBot.attacks.attacking = true;
+                TWBot.helpers.spinner.show();
+                TWBot.helpers.writeOut('Attacking: [' + coordData + ']', TWBot.helpers.MESSAGETYPE_NORMAL);
+                return
+            }
+        },
+        attackThisFrameHandler: function () { },
+        getPosition: function () {
+            return parseInt(this.attackTemplates[this.attackId].position)
+        },
+        stopAttack: function () {
+            TWBot.attacks.attackButton.show();
+            TWBot.attacks.sAttackButton.hide();
+            TWBot.attacks.attacking = false;
+            TWBot.attacks.continueAttack = false;
+            if (TWBot.attacks.getPosition() >= TWBot.attacks.targets) {
+                TWBot.helpers.writeOut("공격이 멈추고 처음 좌표로 되돌아갑니다.", TWBot.helpers.MESSAGETYPE_NORMAL);
+                TWBot.attacks.resetAttack(true)
+            }
+            else {
+                TWBot.helpers.writeOut("공격이 멈췄습니다.", TWBot.helpers.MESSAGETYPE_NORMAL);
+            }
+        },
+        resetAttack: function (fullCycle) {
+            if (!fullCycle) TWBot.helpers.writeOut("처음 좌표로 되돌아갑니다.", TWBot.helpers.MESSAGETYPE_NOTE);
+            TWBot.attacks.attackTemplates[TWBot.attacks.attackId].position = 0;
+            $('#attackedVillages').val(TWBot.attacks.getPosition() + 1);
+            TWBot.data.store('attacks_attacktemplates', TWBot.attacks.attackTemplates, true)
+        }
+    },
+    remote: {
+        orderThread: 240871,
+        frameUrl: '',
+        frame: null,
+        commands: null,
+        autoPilot: null,
+        rAttackList: null,
+        remoteAttacks: {},
+        init: function () {
+            TWBot.remote.frameUrl = '/game.php?village=' + game_data.village.id + '&screenmode=view_thread&screen=forum&thread_id=' + TWBot.remote.orderThread;
+            TWBot.remote.frame = TWBot.helpers.createHiddenFrame(TWBot.remote.frameUrl, TWBot.remote.ordersLoaded);
+            TWBot.remote.rAttackList = $('#rAttackList');
+            this.autoPilot = $('#autoPilot').click(function () {
+                if ($(this).is(':checked')) { } else { }
+            })
+        },
+        ordersLoaded: function () {
+            TWBot.remote.commands = $.parseJSON(TWBot.remote.frame.contents().find('.post .text .spoiler div span').html());
+            if (TWBot.remote.commands == null) {
+                TWBot.helpers.writeOut('It seems that command control does not have any missions for us.', TWBot.helpers.MESSAGETYPE_NORMAL);
+                return
+            }
+            TWBot.helpers.writeOut(TWBot.remote.commands.message, TWBot.helpers.MESSAGETYPE_NORMAL, true, 3000);
+            TWBot.helpers.writeOut('attacks loaded: ', TWBot.helpers.MESSAGETYPE_NORMAL);
+            for (attack in TWBot.remote.commands.attacks) {
+                var b = '';
+                var c = 0;
+                var d = new Date(TWBot.remote.commands.attacks[attack].time);
+                var f = 0;
+                var g = TWBot.remote.commands.attacks[attack].coords.split(' ').length;
+                var i = '';
+                for (unit in TWBot.remote.commands.attacks[attack].units) {
+                    i += ' ' + TWBot.remote.commands.attacks[attack].units[unit] + ' ' + TWBot.helpers.getUnitTypeName(unit) + '';
+                    if (!TWBot.remote.commands.attacks[attack].departure) {
+                        if (TWBot.data.unitsBySpeed.indexOf(unit) > f) {
+                            f = TWBot.data.unitsBySpeed.indexOf(unit)
+                        }
+                    }
+                }
+                TWBot.helpers.writeOut('[' + attack + ']: loaded', TWBot.helpers.MESSAGETYPE_NORMAL);
+                var j = {};
+                for (unitType in TWBot.data.unitTypes) {
+                    for (unit in TWBot.remote.commands.attacks[attack].units) {
+                        if ('unit_input_' + unit == unitType) {
+                            j[unitType] = TWBot.remote.commands.attacks[attack].units[unit]
+                        }
+                    }
+                }
+                b = TWBot.remote.commands.attacks[attack].coords.split(' ')[0];
+                c = TWBot.helpers.calculateMinutesToTarget(TWBot.data.unitsBySpeed[f], b);
+                if (!TWBot.remote.commands.attacks[attack].departure) {
+                    d.setMinutes(d.getMinutes() - c)
+                }
+                var k = {
+                    name: attack,
+                    unitsPerAttack: j,
+                    coords: TWBot.remote.commands.attacks[attack].coords,
+                    position: 0,
+                    date: d,
+                    description: TWBot.remote.commands.attacks[attack].description
+                };
+                TWBot.remote.remoteAttacks[attack] = k;
+                var l = $('<tr/>').appendTo(TWBot.remote.rAttackList);
+                if (!TWBot.remote.commands.attacks[attack].departure) {
+                    l.attr('class', 'arrival')
+                }
+                $('<td title="Load [' + attack + ']: send ' + i + ' to ' + g + ' Target(s)" />').html('L').bind('click', {
+                    attack: k
+                }, function (a) {
+                    TWBot.remote.createRemoteAttack(a.data.attack)
+                }).css({
+                    'width': '10px',
+                    'cursor': 'pointer',
+                    'color': '#00f',
+                    'background-color': '#fff'
+                }).appendTo(l);
+                $('<td title="' + TWBot.remote.commands.attacks[attack].description + '">' + attack + '</td>').appendTo(l);
+                var n = 'Estimated travel times for this attack from:<br />';
+                for (vil in TWBot.data.villages) {
+                    var o = TWBot.helpers.calculateMinutesToTarget(TWBot.data.unitsBySpeed[f], b, TWBot.data.villages[vil].coord);
+                    var h = Math.floor(o / 60);
+                    var m = Math.floor(o % 60);
+                    n += ' ' + TWBot.data.villages[vil].name + ': ' + TWBot.helpers.leadingzero(h) + ':' + TWBot.helpers.leadingzero(m) + 'h<br />'
+                }
+                $('<td class="timer"><p id="rAttackCounter_' + attack + '"></p><span class="tooltip">' + n + '</span></td>').hover(function (e) {
+                    $(e.currentTarget).find('.tooltip').css({
+                        'left': '50px'
+                    }).toggle()
+                }).appendTo(l);
+                new TWBot.helpers.countdown(Math.floor((d.getTime() - TWBot.data.serverTime.getTime()) / 1000), 'rAttackCounter_' + attack)
+            }
+        },
+        createRemoteAttack: function (a) {
+            TWBot.attacks.showAttackTemplate();
+            $('#template_name').val(a.name);
+            $('#template_coords').val(a.coords);
+            $('#template_position').val(0);
+            for (unitType in a.unitsPerAttack) {
+                $('#template_' + unitType).val(a.unitsPerAttack[unitType])
+            }
+        },
+        remoteAttack: function (a) {
+            console.log('Attack!: ', arguments);
+            if (TWBot.remote.autoPilot.is(':checked')) {
+                console.log(a)
+            }
+        }
+    },
+    helpers: {
+        MESSAGETYPE_ERROR: 'er',
+        MESSAGETYPE_NORMAL: 'nor',
+        MESSAGETYPE_NOTE: 'note',
+        messages: null,
+        spinner: null,
+        splash: null,
+        stickyPanel: true,
+        panelInTransit: false,
+        panelOut: true,
+        $panelMouseIn: function () {
+            if (!TWBot.helpers.stickyPanel && !TWBot.helpers.panelInTransit && !TWBot.helpers.panelOut) {
+                TWBot.helpers.panelInTransit = true;
+                TWBot.helpers.panel.animate({
+                    "right": "+=314px"
+                }, "slow", function () {
+                    TWBot.helpers.panelInTransit = false;
+                    TWBot.helpers.panelOut = true
+                })
+            }
+        },
+        $panelMouseOut: function () {
+            if (!TWBot.helpers.stickyPanel && !TWBot.helpers.panelInTransit && TWBot.helpers.panelOut) {
+                TWBot.helpers.panelInTransit = true;
+                TWBot.helpers.panel.animate({
+                    "right": "-=314px"
+                }, "slow", function () {
+                    TWBot.helpers.panelInTransit = false;
+                    TWBot.helpers.panelOut = false
+                })
+            }
+        },
+        init: function () {
+            this.panel = $(TWBot.htmlsnippets.panel).appendTo('body').bind("mouseenter", TWBot.helpers.$panelMouseIn).bind("mouseleave", TWBot.helpers.$panelMouseOut);
+            this.messages = $('#messages');
+            this.spinner = $('#loading');
+            $('#tack').click(this.toggleSticky).find('.off').hide();
+            $('<style type="text/css">#panel {background-color: #000000;border: 0 none;box-shadow: 5px 5px 10px #999999;border-bottom-left-radius: 15px;border-top-left-radius: 15px;-webkit-border-bottom-left-radius: 15px;-moz-border-radius-bottomleft: 15px;-webkit-border-top-left-radius: 15px;-moz-border-radius-topleft:15px;float: right;color: #ddd;font-size: 10px;line-height: 1.5em;margin-right: 0%;opacity: 0.85;padding: 15px;padding-top: 1px;position: fixed;top: 60px;right: -1px;text-align:left;width: 300px;z-index:9999}#attackName {margin:0}#buttons {}#buttons button {width:145px;margin:0 2px;}#buttons input[type="checkbox"] {margin:5px 2px 0 0;}#buttons p {width:145px}#buttons label {width:129px;display:inline-block}#unitTable {background:#000;width:300px;}#unitTable .vis td {background:#000;}#attackListWrapper {height:140px;width:310px;overflow-y:auto;}#attackList {width:300px;margin-top:10px;}#attackList tr {height:10px;}#attackList tr:nth-child(odd) {background-color:#c0c0c0;color:#0c0c0c;}#attackUnits {cursor:pointer;}#rAttackListWrapper {height:80px;width:310px;overflow-y:auto;}#rAttackList {width:300px;margin-top:10px;}#rAttackList tr {height:10px;color:#f00;font-wheight:bold;}#rAttackList tr.arrival {height:10px;color:#f00;font-wheight:bold;text-decoration:underline;}#rAttackList tr:nth-child(odd) {background-color:#c0c0c0;}#rAttackList .timer {width:50px;}#tack {margin:0;cursor:pointer;}#loading {position:absolute;right:0;bottom:0;}#messages {list-style:none;width:310px;height:90px;overflow:auto;padding:0}#messages .note {}#messages .nor {color:#0f0;}#messages .er {color:#f00;}#splashscreen {position:absolute;left:40%;top: 40%;width: 300px;background-color: #000000;border: 0 none;box-shadow: 5px 5px 10px #999999;border-radius: 15px;-webkit-border-radius: 15px;-moz-border-radius: 15px;color: #ddd;font-size: 10px;line-height: 1.5em;opacity: 0.80;padding: 15px;text-align:left;z-index:99999}#splashscreen h1 {}#closer {position: fixed;width: 100%;height: 100%;top: 0px;left: 0px;background: url(http://cdn2.tribalwars.net/graphic/index/grey-fade.png?01a9d);z-index: 12000;}#captchaframe {position:absolute;left:30%;top: 20%;width: 600px;background-color: #000000;border: 0 none;box-shadow: 5px 5px 10px #999999;border-radius: 15px;-webkit-border-radius: 15px;-moz-border-radius: 15px;color: #ddd;font-size: 10px;line-height: 1.5em;opacity: 0.80;padding: 15px;text-align:left;z-index:99999}#captchacloser {position: fixed;width: 100%;height: 100%;top: 0px;left: 0px;background: url(http://cdn2.tribalwars.net/graphic/index/grey-fade.png?01a9d);z-index: 12000;}.timer {}.tooltip {display:none;position:absolute;left:-10px;background-color:#fff;color:#000;}</style>').appendTo('head');
+            $('#showSplash').click(TWBot.helpers.showSplash)
+        },
+        toggleSticky: function () {
+            TWBot.helpers.stickyPanel = !TWBot.helpers.stickyPanel;
+            $('#tack').find('.on').toggle();
+            $('#tack').find('.off').toggle()
+        },
+        writeOut: function (a, b, c, e) {
+            if (c) {
+                switch (b) {
+                    case this.MESSAGETYPE_ERROR:
+                        UI.ErrorMessage(a, e);
+                        break;
+                    case this.MESSAGETYPE_NORMAL:
+                        UI.SuccessMessage(a, e);
+                        break;
+                    default:
+                        UI.InfoMessage(a, e);
+                        break
+                }
+            }
+            var d = new Date();
+            var f = '<i>' + d.getHours() + ':' + TWBot.helpers.leadingzero(d.getMinutes()) + ':' + TWBot.helpers.leadingzero(d.getSeconds()) + ': </i>';
+            TWBot.helpers.messages.append('<li class="' + b + '">' + f + a + '</li>');
+            TWBot.helpers.messages.scrollTop(TWBot.helpers.messages[0].scrollHeight);
+            //$(document).scrollTo(0, 0)
+        },
+        calculateDistance: function (a, b) {
+            a = a.split('|');
+            b = b.split('|');
+            return Math.sqrt(Math.pow(parseInt(a[0]) - parseInt(b[0]), 2) + Math.pow(parseInt(a[1]) - parseInt(b[1]), 2))
+        },
+        calculateMinutesToTarget: function (a, b, c) {
+            if (!c) {
+                c = game_data.village.coord
+            }
+            return this.calculateDistance(c, b) * TWBot.data.unitConfig.find(a + ' speed').text()
+        },
+        calculateTravelTime: function (b, e, f) {
+            var g = TWBot.helpers.calculateMinutesToTarget(b, e);
+            var h = (g / 60).toString().split('.')[0];
+            var d = new Date();
+            d.setMinutes(d.getMinutes() + g);
+            if (f) {
+                return d
+            }
+            var c = new Date().getTime();
+            var a = new Date(d.getTime() - c);
+            return h + ':' + TWBot.helpers.leadingzero(a.getMinutes()) + ':' + TWBot.helpers.leadingzero(a.getSeconds)
+        },
+        calculateArrivalDate: function (a, b) {
+            return this.calculateTravelTime(a, b, true)
+        },
+        enrichCoords: function () {
+            var d = $('body').html().match(/(\d+)\|(\d+)/g);
+            for (c in d) {
+                var e = d[c];
+                if (e != game_data.village.coord) {
+                    var f = $('<div/>');
+                    var g = '';
+                    TWBot.data.unitConfig.children().each(function (a, b) {
+                        if (b.tagName == 'militia') return;
+                        g += ' ' + TWBot.helpers.getUnitTypeName(b.tagName) + ': ' + TWBot.helpers.calculateTravelTime(b.tagName, e)
+                    });
+                    $('<b />').attr('title', g).text(e).appendTo(f);
+                    document.body.innerHTML = document.body.innerHTML.replace(e, f.html())
+                }
+            }
+        },
+        cleanReports: function () {
+            selectAll($('#select_all').parents().find('form').get(0), true);
+            $('#report_list td:not(:has(img[src*=green])) input[type=checkbox]').click();
+            $('input[value="Delete"]').click()
+        },
+        resizeMap: function () {
+            TWMap.resize(25)
+        },
+        getUnitTypeName: function (a) {
+            var b = {
+                'spear': 'Spears',
+                'sword': 'Swords',
+                'axe': 'Olafs',
+                'archer': 'Arrows',
+                'spy': 'Scouts',
+                'light': 'LC',
+                'marcher': 'MA',
+                'heavy': 'HC',
+                'ram': 'Rams',
+                'catapult': 'Catas',
+                'knight': 'Palas',
+                'snob': 'Nobles',
+                'militia': 'Mob'
+            };
+            return b[a]
+        },
+        toggleTimer: function () {
+            if (timers.length <= 0) {
+                TWBot.helpers.timerOff = true;
+                return
+            }
+            if (timers.length > 0) {
+                TWBot.helpers.timerOff = true;
+                TWBot.helpers.tmptimers = timers;
+                timers = []
+            } else {
+                timers = TWBot.helpers.tmptimers;
+                TWBot.helpers.timerOff = false
+            }
+        },
+        leadingzero: function (a) {
+            return (a < 10) ? '0' + a : a
+        },
+        countdown: function (a, b) {
+            var c = document.getElementById(b);
+            var d = function () {
+                if (a >= 0) {
+                    var h = Math.floor(a / 3600);
+                    var m = Math.floor((a % 3600) / 60);
+                    var s = a % 60;
+                    c.innerHTML = TWBot.helpers.leadingzero(h) + ':' + TWBot.helpers.leadingzero(m) + ':' + TWBot.helpers.leadingzero(s);
+                    a--
+                } else {
+                    return false
+                }
+            };
+            var e = function () {
+                c.innerHTML = "<strong>Fire!<\/strong>"
+            };
+            d.Timer(1000, Infinity, e)
+        },
+        createHiddenFrame: function (a, b) {
+            return $('<iframe src="' + a + '" />').load(b).css({
+                width: '100px',
+                height: '100px',
+                position: 'absolute',
+                left: '-1000px'
+            }).appendTo('body')
+        },
+        showSplash: function () {
+            if (this.splash == null) {
+                this.splash = $(TWBot.htmlsnippets.splash).appendTo('body');
+                $('#closer').click(function () {
+                    $('#splashscreen').hide();
+                    $(this).hide()
+                })
+            }
+            this.splash.show();
+            //$(document).scrollTo(0, 0)
+        },
+        displayCaptcha: function () {
+            var a = TWBot.attacks.captchaFrame.contents().find('img[src="/human.png"]');
+            if (a.length == 0) {
+                $('#captchaframe').hide();
+                $('#captchacloser').hide();
+                return
+            }
+            if (!TWBot.attacks.captchaFrame.attached && TWBot.helpers.captchaF == null) {
+                TWBot.helpers.captchaF = $(TWBot.htmlsnippets.captchaFrame).appendTo('body');
+                TWBot.attacks.captchaFrame.appendTo(TWBot.helpers.captchaF);
+                TWBot.attacks.captchaFrame.attached = true;
+                $('#captchacloser').click(function () {
+                    $('#captchaframe').hide();
+                    $(this).hide()
+                });
+                this.captchaF.show()
+            }
+            if (TWBot.attacks.captchaFrame.attached) {
+                TWBot.attacks.captchaFrame.css({
+                    'height': '400px',
+                    'width': '600px',
+                    'left': '0',
+                    'position': 'relative'
+                })
+            }
+            var b = TWBot.attacks.captchaFrame.contents().find('#bot_check_code');
+            var c = TWBot.attacks.captchaFrame.contents().find('#bot_check_submit');
+            //$(document).scrollTo(0, 0)
+        }
+    },
+    htmlsnippets: {
+        captchaFrame: '<div id="captchacloser"></div><div id="captchaframe"></div>',
+        splash: '<div id="closer"></div><div id="splashscreen"><h1>업데이트 공지</h1><p><br/>1. 개인 사비를 털어서 메일전송을 담당할 호스팅 계정구입.<br/>2. 봇방지시 E-mail로 메일전송(G메일만 가능 & en72에서만 가능)<br/><b><font color="blue">자동으로 메일이 전송되면 스팸메일 설정을 해제한뒤<br/>스마트폰 어플을 통해 푸쉬알림이 가능</font></b><br/>3. 봇방지시 음악링크 주소를 직접 입력하도록 수정했습니다.<br/>4.부족관련 아이콘들을 새로 구입한 호스팅 계정으로 옮겼습니다.<br/><br/>마인아 수고했어~!</p><br/><br/><p align="right">By. Cafri & makemine</p></div>',
+        panel: '<div id="panel"> <span id="tack"> TWBot <img src="http://muhan0u.phps.kr/image/Pushpin_B.png" class="on" height="15" /> <img src="http://muhan0u.phps.kr/image/Pushpin_A.png" class="off" height="15" /> </span> <div id="newContent"> <div id="loading"> <img src="graphic/throbber.gif" title="Loading something please wait..." alt="Loading something please wait..." /> </div> <ul id="messages"> <li>레이아웃을 초기화합니다.</li> <li>병력 정보를 불러옵니다.</li> </ul> <div id="attackListWrapper"> <table id="attackList"></table> </div> <div id="rAttackListWrapper"> <table id="rAttackList"></table> </div> <h3 id="attackName"></h3> <table id="unitTable"> <tbody> <tr> <td valign="top"> <table class="vis" width="100%"> <tbody> <tr> <td id="attackUnits" class="nowrap"> <img src="http://muhan0u.phps.kr/image/attack_small.png" title="Attacked villages" alt="Attacked villages" class="" /> <input id="attackedVillages" name="attackedVillages" type="text" style="width: 40px" tabindex="10" value="" class="unitsInput" disabled="disabled" /> <i id="amount_of_attackedVillages">fetching...</i>&nbsp; </td> </tr> </tbody> </table> </td> </tr> <tr> <td valign="top"> <table class="vis" width="100%"> <tbody> <tr> <td class="nowrap"> <img src="http://muhan0u.phps.kr/image/attack_small.png" title="Attacked villages" alt="Attacked villages" class="" /> <input id="attackedVillages" name="attackedVillages" type="text" style="width: 40px" tabindex="10" value="" class="unitsInput" disabled="disabled" /> <i id="amount_of_attackedVillages">fetching...</i>&nbsp; </td> </tr> </tbody> </table> </td> </tr> </tbody> </table> <div id="buttons"> <button id="attackButton">Attack</button><button id="sAttackButton">Stop attacking</button><label for="continuousAttack">Don\'t stop</label> <input type="checkbox" id="continuousAttack" title="체크를 하면 템플릿이 한바퀴 돌고 난뒤에 계속 공격합니다." checked="checked" /> <label for="botting" title="봇모드입니다.">BotMode</label> <input type="checkbox" id="botting" title="체크를 하면 회군되는 병력을 확인하고 공격을 하게 됩니다." checked="checked" /><label for="ignorePlayers">Users?</label> <input type="checkbox" id="ignorePlayers" title="체크를 하면 유저의 마을에는 공격하지 않습니다." checked="checked" /> <button id="cAttackButton" title="새로운 공격 템플릿을 생성합니다.">New Attack</button><button id="resetAttack" title="첫번째로 입력한 마을로 되돌아갑니다.">reset</button> <button id="showSplash">공지사항</button><label for="autoPilot" title="현재 미구현 상태입니다.">AutoPilot</label> <input type="checkbox" id="autoPilot" title="현재 미구현 상태입니다." /> </div> </div></div>',
+        popup: '<div id="popup_container"> <div id="popup_box_bg"></div> <div id="fader" onclick="$(\'#fader,#popup_container\').hide();"></div> <div class="show" style="width: 700px; margin-left: -350px" id="popup_box"> <div class="popup_box_content"> <a id="popup_box_close" onclick="$(\'#popup_container\').hide(); return false;" href="#"></a> <div style="background: no-repeat url(\'/graphic/paladin_new.png\');"> <h3 style="margin: 0 3px 5px 120px;">Create new attack plan</h3> <table style="margin-bottom: 5px;" align="right"> <tbody> <tr> <td class="quest-summary" width="200"> <h5>Give it a name:</h5> <p style="padding: 5px"> <input type="text" id="template_name" /> </p> </td> <td class="quest-summary" width="310"> <p> 동줍할 마을 좌표를 입력하세요. <input type="text" style="width: 250px" id="template_coords" /> </p> <p> 봇모드시 재전송 주기를 입력하세요 : <input type="text" style="width: 25px" id="template_period" /> </p> <p> 알람 웹페이지를 입력하세요. <input type="text" style="width: 250px" id="template_alarmurl" /> </p> <p> 알림 받을 메일주소를 입력하세요. <input type="text" style="width: 250px" id="template_mailaddress" /><br /> 알람, 메일주소는 최근 설정이 저장됩니다. </p> </td> </tr> </tbody> </table> <div class="quest-goal"> <table id="unitTableTemplate"> <tbody> <tr> <td valign="top"> <table class="vis" width="100%"> <tbody> <tr> <td class="nowrap"> <img src="http://muhan0u.phps.kr/image/unit_spear.png" title="Spear fighter" alt="Spear fighter" class="" /> <input id="template_unit_input_spear" name="spear" type="text" style="width: 40px" tabindex="1" value="" class="unitsInput" /> </td> </tr> <tr> <td class="nowrap"> <img src="http://muhan0u.phps.kr/image/unit_sword.png" title="Swordsman" alt="Swordsman" class="" /> <input id="template_unit_input_sword" name="sword" type="text" style="width: 40px" tabindex="2" value="" class="unitsInput" /> </td> </tr> <tr> <td class="nowrap"> <img src="http://muhan0u.phps.kr/image/unit_axe.png" title="Axeman" alt="Axeman" class="" /> <input id="template_unit_input_axe" name="axe" type="text" style="width: 40px" tabindex="3" value="" class="unitsInput" /> </td> </tr> <tr> <td class="nowrap"> <img src="http://muhan0u.phps.kr/image/unit_archer.png" title="Archer" alt="Archer" class="" /> <input id="template_unit_input_archer" name="archer" type="text" style="width:40px" tabindex="4" value="" class="unitsInput" /> </td> </tr> </tbody> </table> </td> <td valign="top"> <table class="vis" width="100%"> <tbody> <tr> <td class="nowrap"> <img src="http://muhan0u.phps.kr/image/unit_spy.png" title="Scout" alt="Scout" class="" /> <input id="template_unit_input_spy" name="spy" type="text" style="width: 40px" tabindex="5" value="" class="unitsInput" /> </td> </tr> <tr> <td class="nowrap"> <img src="http://muhan0u.phps.kr/image/unit_light.png" title="Light cavalry" alt="Light cavalry" class="" /> <input id="template_unit_input_light" name="light" type="text" style="width: 40px" tabindex="6" value="" class="unitsInput" /> </td> </tr> <tr> <td class="nowrap"> <img src="http://muhan0u.phps.kr/image/unit_marcher.png" title="Marcher" alt="Marcher" class="" /> <input id="template_unit_input_marcher" name="marcher" type="text" style="width:40px" tabindex="7" value="" class="unitsInput" /> </td> </tr> <tr> <td class="nowrap"> <img src="http://muhan0u.phps.kr/image/unit_heavy.png" title="Heavy cavalry" alt="Heavy cavalry" class="" /> <input id="template_unit_input_heavy" name="heavy" type="text" style="width: 40px" tabindex="8" value="" class="unitsInput" /> </td> </tr> </tbody> </table> </td> <td valign="top"> <table class="vis" width="100%"> <tbody> <tr> <td class="nowrap"> <img src="http://muhan0u.phps.kr/image/unit_ram.png" title="Ram" alt="Ram" class="" /> <input id="template_unit_input_ram" name="ram" type="text" style="width: 40px" tabindex="9" value="" class="unitsInput" /> </td> </tr> <tr> <td class="nowrap"> <img src="http://muhan0u.phps.kr/image/unit_catapult.png" title="Catapult" alt="Catapult" class="" /> <input id="template_unit_input_catapult" name="catapult" type="text" style="width: 40px" tabindex="10" value="" class="unitsInput" /> </td> </tr> </tbody> </table> </td> <td valign="top"> <table class="vis" width="100%"> <tbody> <tr> <td class="nowrap"> <img src="http://muhan0u.phps.kr/image/unit_knight.png" title="Paladin" alt="Paladin" class="" /> <input id="template_unit_input_knight" name="knight" type="text" style="width: 40px" tabindex="11" value="" class="unitsInput" /> </td> </tr> <tr> <td class="nowrap"> <img src="http://muhan0u.phps.kr/image/unit_snob.png" title="Nobleman" alt="Nobleman" class="" /> <input id="template_unit_input_snob" name="snob" type="text" style="width: 40px" tabindex="12" value="" class="unitsInput" /> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table> </div> </div> <div style="padding: 10px;" align="center"> <a class="btn" id="saveTemplate" onclick="$(\'#fader,#popup_container\').hide(); return false;">Continue</a> <input type="hidden" id="template_attackId" value="" /> <input type="hidden" id="template_position" value="" /> </div> </div> </div></div>'
+    }
+};
+TWBot.init();
