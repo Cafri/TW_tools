@@ -30,7 +30,7 @@ infoText += "<br>지도 검색중...";
 
 UI.InfoMessage(infoText);
 
-$.get("http://en80.tribalwars.net/map.php?v=2" + mapSearch, function (data, status) {
+$.get("https://en80.tribalwars.net/map.php?v=2" + mapSearch, function (data, status) {
     infoText += "<br>지도 검색완료...";
 
     $.each(data, function (index, item) {
