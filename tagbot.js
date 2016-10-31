@@ -75,7 +75,7 @@ var TagBot = {
                 TagBot['reload']()
             } else {
                 TagBot['count']++;
-                setTimeout(TagBot.DetectTower, 500)
+                setTimeout(TagBot.DetectTower, 100)
             }
         }
     }
