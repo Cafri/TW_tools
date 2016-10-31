@@ -39,7 +39,7 @@ var TagBot = {
             TagBot['stopLabel']();
             return
         };
-        setTimeout(TagBot.DetectTower, 10);
+        setTimeout(TagBot.DetectTower, 600);
         TagBot['liframe']['contents']()['find']('.selectAll')['click']();
         TagBot['liframe']['contents']()['find']('.btn-default[value=Label]')['click']()
     },
@@ -56,8 +56,8 @@ var TagBot = {
             $['each'](TagBot['ids'], function(_0xbc6bx2, _0xbc6bx5) {
                 curUnknown = TagBot['liframe']['contents']()['find']('span[data-id=' + _0xbc6bx5 + ']');
                 var _0xbc6bx3 = $('#serverTime')['html']() + ' ' + $('#serverDate')['html']();
-                TagBot['liframe']['contents']()['find']('.selectAll')['click']();
-                TagBot['liframe']['contents']()['find']('.btn-default[value=Label]')['click']();
+                $('#select_all').click();
+		        $('input[name=label_format]').val(format).parents('form').find('input[name=label]').click();
                 $(curUnknown)['find']('a.rename-icon')['get'](0)['click']();
                 $(curUnknown)['find']('input[type=text]')['val']($(curUnknown)['find']('input[type=text]')['val']()['replace']('Noble', '***NOBLE***') + ' - ' + _0xbc6bx3);
                 $(curUnknown)['find']('input.btn')['click']()
@@ -77,7 +77,7 @@ var TagBot = {
                 TagBot['reload']()
             } else {
                 TagBot['count']++;
-                setTimeout(TagBot.DetectTower, 500)
+                setTimeout(TagBot.DetectTower, 5)
             }
         }
     }
