@@ -39,7 +39,7 @@ var TagBot = {
             TagBot['stopLabel']();
             return
         };
-        setTimeout(TagBot.DetectTower, 1000);
+        setTimeout(TagBot.DetectTower, 10);
         TagBot['liframe']['contents']()['find']('.selectAll')['click']();
         TagBot['liframe']['contents']()['find']('.btn-default[value=Label]')['click']()
     },
@@ -77,7 +77,7 @@ var TagBot = {
                 TagBot['reload']()
             } else {
                 TagBot['count']++;
-                setTimeout(TagBot.DetectTower, 5)
+                setTimeout(TagBot.DetectTower, 500)
             }
         }
     }
