@@ -57,7 +57,6 @@ var TagBot = {
                 curUnknown = TagBot['liframe']['contents']()['find']('span[data-id=' + _0xbc6bx5 + ']');
                 var _0xbc6bx3 = $('#serverTime')['html']() + ' ' + $('#serverDate')['html']();
                 $(curUnknown)['find']('input.selectAll')['click']();
-                $(curUnknown)['find']('input[name=label]')['click']();
                 $(curUnknown)['find']('a.rename-icon')['get'](0)['click']();
                 $(curUnknown)['find']('input[type=text]')['val']($(curUnknown)['find']('input[type=text]')['val']()['replace']('Noble', '***NOBLE***') + ' - ' + _0xbc6bx3);
                 $(curUnknown)['find']('input.btn')['click']()
