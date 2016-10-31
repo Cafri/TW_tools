@@ -54,7 +54,7 @@ var TagBot = {
         });
         TagBot['liframe']['one']('load', function() {
             $['each'](TagBot['ids'], function(_0xbc6bx2, _0xbc6bx5) {
-                curUnknown = TagBot['liframe']['contents']()['find']('span[data-id=' + _0xbc6bx5 + ']');
+                curUnknown = TagBot['liframe']['contents']();
                 var _0xbc6bx3 = $('#serverTime')['html']() + ' ' + $('#serverDate')['html']();
                 $(curUnknown)['find']('#select_all')['click']();
 		$(curUnknown)['find']('input[name=label]')['click']();
