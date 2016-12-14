@@ -1,8 +1,8 @@
 /* 
  * Author: Mori
  * Name: Farming Assistance
- * Version: 6.3
- * Date: 2016.1.25
+ * Version: 6.1
+ * Date: 2015.12.19
  * Client script: javascript:$.getScript('https://moriya.kr:43468/tw/js/MoriFarming.js?dl=0');void 0;
  *
  */
@@ -47,7 +47,7 @@ else if(dong_count >= max_coords) {
 }
 
 if (max_coords < 1) {
-	UI.InfoMessage("Need to initialize the Farming.");
+	UI.InfoMessage("동줍 초기화를 먼저 해주세요!!");
 	bool_run = false;
 }
 else {
@@ -133,7 +133,7 @@ function removeCoords(vID)
 		{
 			coords.splice(i, 1);
 			coords_point.splice(i, 1);
-			infoText += vID + " Removed! Remain Coords are" + coords.length;
+			infoText += vID + "유저마을 제거완료! 남은 좌표개수는" + coords.length;
 			find = 1;
 		}
 	}
@@ -154,7 +154,7 @@ function removeCoords(vID)
 	coords = localStorage.getItem(dong_map_data).split(" ");
 	max_coords = coords.length - 1;
 
-	if(find == 0) infoText += vID + "Failed Village Search";
+	if(find == 0) infoText += vID + "마을검색실패";
 	UI.InfoMessage(infoText,5000);
 
 	if(dong_count > max_coords) dong_count = 0;
@@ -180,7 +180,7 @@ function dong() {
             "source": game_data["village"]["id"]
         }, function (data, status) {
             if (data.success) {
-                UI.InfoMessage("Farming : " + ((dong_count*=1)+1) + "/" + ((max_coords*=1)+1) + " (Remain LC:" + data.current_units.light + ")");
+                UI.InfoMessage("동줍 : " + ((dong_count*=1)+1) + "/" + ((max_coords*=1)+1) + "번째 진행중.. (남은 기마 수:" + data.current_units.light + ")");
                 dong_count++;
                 false_count = 0;
 
@@ -199,29 +199,26 @@ function dong() {
 
 				errorMessage = data.error;
 				if(errorMessage == "Not enough units available") {
-					var sec = 1000;
-					var min = 60;
-					var rand = ((Math.random() * 10) + 5) * 60 * 1000;
-					UI.InfoMessage("Farming : " + ((dong_count*=1)+1) + "/" + ((max_coords*=1)+1) + "Waiting for LC(" + false_count + "), \nPause time:" + rand/1000, rand);
-                    setTimeout("loop_run()", rand);
+					UI.InfoMessage("동줍 : " + ((dong_count*=1)+1) + "/" + ((max_coords*=1)+1) + "번째 기마병 부족으로 대기중...(" + false_count + ")", 5000); 
+                    setTimeout("loop_run()", 5000);
 				}
 				else if (errorMessage == "Invalid village." || errorMessage == "You are not allowed to attack a player.") {
-					UI.InfoMessage(errorMessage, 4800);
+					UI.InfoMessage(errorMessage, 5000);
 					set_candidate_remove_village = coords[dong_count];
 					set_current_count = dong_count;
 					removeCoords(set_candidate_remove_village);
 					false_count = 0;
-                    setTimeout("loop_run()", 4800);
+                    setTimeout("loop_run()", 5000);
 				}
 				else if (errorMessage == "Your session has expired, please login again.") {
-                    UI.ErrorMessage(errorMessage + "<br />Session Out! Please Re-login.", 3 * 24 * 60 * 60 * 1000);
+                    UI.ErrorMessage(errorMessage + "<br />세션 만료! 로그인 후 재시작해주세요.", 3 * 24 * 60 * 60 * 1000);
                     var subjectVal = '[TWBot] Session Expired : ' + game_data.world + ', ' + game_data.player.name;
                     var messageVal = 'Session Expired! : ' + Date($.now());
                     sendEmail(subjectVal, messageVal);
                 }
 				else {
-                    UI.ErrorMessage(errorMessage + "<br />Unknown error!", 4800);
-                    setTimeout("loop_run()", 4800);
+                    UI.ErrorMessage(errorMessage + "<br />알 수 없는 에러입니다!", 5000);
+                    setTimeout("loop_run()", 5000);
                 }
             }
         }, 'json');
@@ -231,7 +228,7 @@ function dong() {
 	$(document).keydown(function(e){
 		if(e.keyCode == 27){
 			clearInterval(loop);
-			UI.InfoMessage("Farming Stop!");
+			UI.InfoMessage("사용자 요청으로 인해 동줍 중지!");
 		}
 	});
 
@@ -271,7 +268,7 @@ if (document.location.href.indexOf('am_farm') > -1) {
 		if(mailAddress == null) {
 			localStorage.setItem("mailAddress", prompt("세션 만료 용 메일주소 입력"));
 		}
-        loop = setInterval("dong()", 480);
+        loop = setInterval("dong()", 500);
     }
 } else {
     document.location.href = game_data['link_base_pure'] + "am_farm"
