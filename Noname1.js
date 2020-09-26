@@ -14,7 +14,7 @@ if ($(document).ready)
 
 function send_attacks()
 {
-    all = document.getElementsByClassName("farm_icon_a" + template);
+    all = document.getElementsByClassName("farm_icon_" + template);
     attackSenderInterval = setInterval(send_attacks_update, delay_between_clicks);
 }
 
